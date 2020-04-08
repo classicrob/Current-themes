@@ -619,7 +619,7 @@ body {
   position: relative;
   padding: 16px 42px 120px;
   font-size: 20px; /* RTB add: larger font */
-  color: #585f61; /* RTB add: roam color - solarized light */
+  color: #444444; /* RTB add: roam color - solarized light */
 }
 .roam-body .roam-app .roam-main .roam-article .rm-title-display {
   margin-bottom: 32px;
@@ -1479,14 +1479,14 @@ body {
   padding: 0;
 }
 div {
-  font-family: 'Roboto'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
 }
 textarea {
-  font-family: 'Roboto'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1638,16 +1638,15 @@ span.rm-page-ref  {
     color: #e9e1cc;
 }
 
-.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
+/* Better hover effect for shortcut pages in left side-bar */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-    background-color: #f8c764;
-    color: #586f76;
-	padding-left: 10px;
+color: #DAD5B6;
+background-color: #767558;
 }
 /* Omni Sidebar Hover State */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover { 
-  color: #586f76;
-  background-color: #ffca36d9;
+  color: #DAD5B6;
+  background-color: #767558;
 }
 
 
@@ -1663,9 +1662,16 @@ span.rm-page-ref  {
 .roam-body .roam-app .roam-sidebar-container {
 background-color: #586F76 !important;
 }
-/* Hide Roam Research logo */
+/*Change Roam Research logo color to match theme*/
 #roam-sidebar-logo {
-display: none;
+ filter: brightness(0) saturate(100%) invert(92%) sepia(20%) saturate(457%) hue-rotate(315deg) brightness(108%) contrast(99%);
+}
+#roam-sidebar-logo:focus, #roam-sidebar-logo:hover {
+ text-decoration: none !important;
+}
+/* Change color of the email address at top of left sidebar to match theme */
+.bp3-button div {
+color: #FEF6E5 !important;
 }
 span.rm-page-ref:hover {
     color: #586f76 !important;
