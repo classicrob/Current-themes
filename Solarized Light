@@ -1288,7 +1288,7 @@ body {
   overflow-wrap: break-spaces;
   vertical-align: top;
   margin-top: -1px;
-  background-color: #abffa0c4;
+  background-color: #ece0ad;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
