@@ -1,3 +1,12 @@
+/*
+### ROAM CUSTOM THEME ###
+> Many thanks to the Roam Slack community for all the resources, particularly @Anthony and @Mark for their patience with me that helped in this construction.  Mostly adapted from Anthony's bear themes, with some mix and matches from other people's codes.  I don't know what I'm doing really, just wanted to make it pretty.
+> Edits by Rob Haisfield
+> v1.0
+*/
+
+/* Editor */
+
 @import "../fonts/Inter/inter.css";
 .loading-astrolabe {
   margin: auto;
@@ -1619,16 +1628,6 @@ div[id^='block-input-'] > span > div {
 	margin-top: -3px;
 }
 
-span.rm-page-ref {
- 	background-color: #fbd15b75 !important;
-  	font-size: 18px;
-  	letter-spacing: .07em;
-}
-span.rm-page-ref  {
-    color: black !important;
-    border-radius: 10px;
-    padding: 2px 3px 2px 3px;
-}
 
 /* Side Bar */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
@@ -1673,13 +1672,46 @@ background-color: #586F76 !important;
 .bp3-button div {
 color: #FEF6E5 !important;
 }
+
+/*Pill Page References*/
+/*span.rm-page-ref {
+ 	background-color: #fbd15b75 !important;
+  	font-size: 18px;
+  	letter-spacing: .07em;
+}
+span.rm-page-ref  {
+    color: black !important;
+    border-radius: 10px;
+    padding: 2px 3px 2px 3px;
+}
+
 span.rm-page-ref:hover {
-    color: #586f76 !important;
+    color: black !important;
+	background-color: #b0d4fc !important;
+    text-decoration: none;
+}
+span.rm-page-ref:hover {
+    color: #000 !important;
 	background-color: #ffca36d9 !important;
     border-radius: 15px;
     text-decoration: none;
-}
+}*/
 
+/* Tag Styles hashtags*/
+/*.rm-page-ref-tag 
+    color: #f8c764 !important;
+    background-color: #423212;
+    border-radius: 10px;
+    padding: 2px 3px 2px 3px;
+}
+.rm-page-ref-tag:hover {
+    color: white !important;
+  background-color: #e88a24;
+    text-decoration: none;
+}
+*/
+
+/*scrollbar*/
 ::-webkit-scrollbar {
     width: 7px;
 }
