@@ -1701,7 +1701,7 @@ span.rm-page-ref:hover {
 ::-webkit-scrollbar {
     width: 7px;
 }
-/*lets me customize color of the selected block*/
+/*lets me customize color of the selected block and text within it*/
 .rm-block-input {
   line-height: 1.5em;
   width: 100%;
@@ -1709,7 +1709,8 @@ span.rm-page-ref:hover {
   overflow-wrap: break-spaces;
   vertical-align: top;
   margin-top: -1px;
-  background-color: #abffa0c4;
+  color: #000 !important;
+  background-color: #c4b40461;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 5px;
@@ -1717,3 +1718,38 @@ span.rm-page-ref:hover {
   border-radius: 10px;
   resize: none;
 }
+
+/* search */
+
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+}
+
+/*reduces font size when I'm doing an inline search with [[]] or (()) */
+div.bp3-elevation-3 {
+  font-size: 0.7em;
+}
+/*Wraps text when I'm doing an inline search with [[]] or (())*/
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+
+/* Increases the height of the inline search box */
+div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
+   max-height: 600px !important;
+}
+
+/* Right side bar reference boxes */
+#right-sidebar .rm-reference-item { 
+  background-color: #ede6f9;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Reference Boxes */
+/*.rm-reference-item { 
+  background-color: #ede6f9;
+    border-radius: 15px;
+    padding: 20px;
+}*/
