@@ -1,3 +1,4 @@
+
 /*
 ### ROAM CUSTOM THEME ###
 > Many thanks to the Roam Slack community for all the resources, particularly @Anthony and @Mark for their patience with me that helped in this construction.  Mostly adapted from Anthony's bear themes, with some mix and matches from other people's codes.  I don't know what I'm doing really, just wanted to make it pretty.
@@ -1418,7 +1419,7 @@ Popup menu when typing / below
 
 /* target block embeds on main page and in sidebar */
 div[id^='block-input-'] > span > div {
-  background-color: #9fe7fa3b !important; 
+  background-color: #80FFEA3b !important; 
 }
 
 
@@ -1427,17 +1428,17 @@ div[id^='block-input-'] > span > div {
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page { 
         background-color: #22212C;
-    color: #9FE7FA;
+    color: #80FFEA;
 }
 
 /* Better hover effect for shortcut pages in left side-bar */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-color: #9FE7FA;
+color: #80FFEA;
 background-color: #7970A9;
 }
 /* Omni Sidebar Hover State */
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover { 
-  color: #9FE7FA;
+  color: #80FFEA;
   background-color: #7970A9;
 }
 
@@ -1447,7 +1448,7 @@ background-color: #7970A9;
 	.bp3-minimal:before, 
 	.bp3-icon-menu:before,
 	.bp3-small:before {
-	color: #9FE7FA !important;
+	color: #80FFEA !important;
 }
 
 /* Change sideboard left sidebar to all one color */
@@ -1463,7 +1464,7 @@ background-color: #22212C !important;
 }
 /* Change color of the email address at top of left sidebar to match theme */
 .bp3-button div {
-color: #9FE7FA !important;
+color: #80FFEA !important;
 }
 
 /*scrollbar*/
@@ -1496,7 +1497,7 @@ color: #9FE7FA !important;
 }
 /* Input Text Color */
 .bp3-input {
-  color: #9FE7FA;
+  color: #80FFEA;
 }
 
 /* Roam Search Box Field and Border */
@@ -1509,7 +1510,7 @@ color: #9FE7FA !important;
 /* Roam Search Box Placeholder Text Color */
 .bp3-input::placeholder,
 .bp3-input-group > .bp3-icon {
-    color: #9FE7FA;
+    color: #80FFEA;
 }
 
 /* Context Menus */
@@ -1598,7 +1599,7 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
     border-bottom: 1px solid #353844 !important;
 }
 .rm-pages-title-col > .bp3-text-overflow-ellipsis > a {
-    color: #9FE7FA !important;
+    color: #80FFEA !important;
 }
 .rm-pages-title-col > .bp3-text-overflow-ellipsis > span {
     color: #83F58A !important;
