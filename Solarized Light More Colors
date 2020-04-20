@@ -641,10 +641,7 @@ body {
   padding-top: 0px;
   border-top: none;
 }
-.roam-block .rm-reference-main {
-  border: 1px solid #ced9e0;
-  padding: 0px 16px 12px 16px;
-}
+
 .pointer {
   cursor: pointer;
 }
@@ -1052,7 +1049,7 @@ body {
   padding-right: 8px;
 }
 .rm-level1 {
-  font-family: 'Calendas Plus'; /* RTB change */
+  font-family: 'Avenir Next'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
@@ -1064,7 +1061,7 @@ body {
   margin-top: -8px; /* RTB add */
 }
 .rm-level2 {
-  font-family: 'Calendas Plus' !important; /* RTB change */
+  font-family: 'Avenir next' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
@@ -1474,14 +1471,14 @@ body {
   padding: 0;
 }
 div {
-  font-family: 'Calendas Plus'; /* RTB change: desired font (bear) */
+  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
 }
 textarea {
-  font-family: 'Calendas Plus'; /* RTB change: desired font (bear) */
+  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1775,3 +1772,9 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
     border-radius: 15px;
     padding: 20px;
 }*/
+
+.roam-block .rm-reference-main {
+  border: 2px solid #ced9e0;
+  padding: 0px 16px 12px 16px;
+  background-color: #ced9e073;	
+}
