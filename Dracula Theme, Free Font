@@ -630,10 +630,7 @@ body {
   padding-top: 0px;
   border-top: none;
 }
-.roam-block .rm-reference-main {
-  border: 1px solid #ced9e0;
-  padding: 0px 16px 12px 16px;
-}
+
 .pointer {
   cursor: pointer;
 }
@@ -918,6 +915,7 @@ body {
   padding: 8px 4px;
   flex: 1 0 15%;
 }
+/* candidate for changing the background color of a block reference */
 .rm-reference-item {
   margin-top: 8px;
   margin-right: 8px;
@@ -1751,7 +1749,7 @@ textarea {
   margin: 4px 8px 4px 0px;
   cursor: pointer;
   padding: 8px;
-  background-color: #bfccd6;
+  background-color: #FF80BF;
 }
 .block-mention:hover {
   background-color: #a7b6c2;
@@ -1779,7 +1777,7 @@ textarea {
 }
 /* candidate block reference color*/
 .rm-block-ref {
-  padding: 4px 2px;
+  padding: 1px 2px;
   margin: -4px 0px;
   font-size: 20px; /* RTB change: block ref's same size as others */
   display: inline;
@@ -1787,9 +1785,11 @@ textarea {
   cursor: alias;
   padding-left: 0px; /* RTB add: align to left */
 }
+/* css block reference hovor color */
 .rm-block-ref:hover {
-  background-color: #f5f8fa;
+  background-color: #847CA5;
 }
+
 .rm-reference-container {
   border-top: 2px solid #2A212C;
   padding-top: 12px;
@@ -1846,4 +1846,10 @@ span.rm-page-ref:hover {
 
 .roam-app em {
   color: #FF80BF;
+}
+
+.roam-block .rm-reference-main {
+  border: 1px solid #ced9e0;
+  padding: 0px 16px 12px 16px;
+  background-color: #93a1a173
 }
