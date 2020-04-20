@@ -1,7 +1,7 @@
 
 /*
 ### ROAM CUSTOM THEME ###
-> Many thanks to the Roam Slack community for all the resources, particularly @Anthony and @Mark for their patience with me that helped in this construction.  Mostly adapted from Anthony's bear themes, with some mix and matches from other people's codes.  I don't know what I'm doing really, just wanted to make it pretty.
+> Many thanks to the Roam Slack community for all the resources, particularly @Anthony and @Mark for their patience with me that helped in this construction.  Mostly adapted from Anthony's bear themes, with some mix and matches from other people's codes and other changes.  I don't know what I'm doing really, just wanted to make it pretty.
 > Edits by Rob Haisfield
 > v1.0
 */
@@ -1414,7 +1414,7 @@ Popup menu when typing / below
 */
 /* background color for right sidebar */
 #right-sidebar {
-  background-color: #2D2A3A !important; /* nicer light gray color */
+  background-color: #353844 !important; /* nicer light gray color */
 }
 
 /* target block embeds on main page and in sidebar */
@@ -1644,7 +1644,7 @@ textarea {
 }
 
 /* Header Styles */
-/*RR change: Header styles*/
+/* RR change: Header styles */
 .roam-body .roam-app h1 {
   /*color: #202b33;*/
   /*RR change: font, blue text and background highlight*/
@@ -1838,3 +1838,12 @@ span.rm-page-ref:hover {
   .flex-v-box.rm-menu-item:hover, .flex-v-box.rm-menu-item[style ^="background-color"]:hover {
     background-color: #454158 !important;
   }
+
+/*RR change: additional text styles*/
+.roam-app strong {
+  color: #FF9580 !important;
+}
+
+.roam-app em {
+  color: #FF80BF;
+}
