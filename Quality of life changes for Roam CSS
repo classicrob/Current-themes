@@ -1,4 +1,4 @@
-/*reduces font size when I'm doing an inline search with [[]] or (()) */
+/* reduces font size when I'm doing an inline search with [[]] or (()) */
 div.bp3-elevation-3 {
   font-size: 0.7em;
 }
@@ -8,7 +8,7 @@ div.bp3-elevation-3 {
     white-space: unset;
 }
 
-Add scrollbars
+/* Add scrollbars */
 
 ::-webkit-scrollbar {
   width: 0px;
