@@ -7,3 +7,8 @@ div.bp3-elevation-3 {
     text-overflow: unset;
     white-space: unset;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
