@@ -1,0 +1,9 @@
+/*reduces font size when I'm doing an inline search with [[]] or (()) */
+div.bp3-elevation-3 {
+  font-size: 0.7em;
+}
+/*Wraps text when I'm doing an inline search with [[]] or (())*/
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
