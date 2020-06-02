@@ -1694,7 +1694,7 @@ span.rm-page-ref:hover {
 }
 */
 
-/*scrollbar*/
+/* scrollbar scroll bar */
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -1793,7 +1793,7 @@ visibility: hidden !important;
 }
 
 /* full width of text */
-.roam-block-container {
+ .roam-block-container {
   max-width: 100% !important; 
 }
 div.roam-center > div:first-child {
@@ -1818,7 +1818,8 @@ div.roam-center > div:first-child {
     max-width: 100%;
 }
 
-/* You may want to comment out Andy Matuschak and Masonry mode, but I freaking love it. They rework the way the sidebar works. */
+
+
 /* Andy Matuschak Mode */
 .roam-center {
   flex: 1 1 100% !important;
@@ -1831,13 +1832,14 @@ div.roam-center > div:first-child {
   overflow: scroll !important;
   white-space: wrap;
   display: flex;
-  /* Below is for masonry layout */
+  align-content: flex-start;
+/* Below is for masonry layout */
   flex-flow: column wrap;
 }
 #right-sidebar #roam-right-sidebar-content > div {
   position: relative;
   display: flex;
-  flex: 1 0 40%;
+  flex: 0 1 auto;
   flex-direction: column;
   padding: 10px;
   border: 1px solid #bfbfbf !important;
@@ -1845,16 +1847,20 @@ div.roam-center > div:first-child {
   background-color: rgb(247, 249, 251) !important;
   align-self: flex-start;
   margin-right: 0px !important;
-  height: 780px;
-  overflow-y: scroll;
-  /* Below is for masonry layout */
+/* Below is for masonry layout */
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 500px;
+  width: 1000px;
+}
+#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 1700px;
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #bfbfbf;
   border-radius: 5px;
   background-color: #fcf5e5 !important;
 }
