@@ -1471,14 +1471,14 @@ body {
   padding: 0;
 }
 div {
-  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
 }
 textarea {
-  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1716,13 +1716,13 @@ span.rm-page-ref:hover {
   resize: none;
 }
 
-/* search */
+/* search bar full width */
 
 .rm-find-or-create-wrapper {
   flex: 0 1 100% !important;
 }
 
-/*reduces font size when I'm doing an inline search with [[]] or (()) */
+/* reduces font size when I'm doing an inline search with [[]] or (()) */
 div.bp3-elevation-3 {
   font-size: 0.7em;
 }
@@ -1777,4 +1777,84 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
   border: 2px solid #ced9e0;
   padding: 0px 16px 12px 16px;
   background-color: #ced9e073;	
+}
+
+.loading-astrolabe{
+display: block;
+ -moz-box-sizing: border-box;
+  box-sizing: border-box;
+ background: url(https://i.imgur.com/KWl6pqT.gif) no-repeat;
+  width: 600px;
+  height: 600px;
+  padding-left: 600px; /* Equal to width of new image */
+}
+.loading-astrolabe .wand{
+visibility: hidden !important;
+}
+
+/* full width of text */
+.roam-block-container {
+  max-width: 100% !important; 
+}
+div.roam-center > div:first-child {
+    padding-right: calc((100% - 950px) / 2) !important;
+    padding-left: calc((100% - 1500px) / 2) !important;
+}
+.hoverparent[style^='position: relative; width: 500px;'] {
+    width: 100% !important;
+}
+.hoverparent .react-resizable[style^='width: 500px;'] {
+    width: 100% !important;
+}
+.react-resizable[style^='width: 580px;'], 
+.react-resizable[style^='width: 720px;'] {
+  width: 100% !important;
+}
+.hoverparent[style^="position: relative; width: 580px;"],
+.hoverparent[style^="position: relative; width: 720px;"] {
+  width: 100% !important;
+}
+.rm-block-text {
+    max-width: 100%;
+}
+
+/* You may want to comment out Andy Matuschak and Masonry mode, but I freaking love it. They rework the way the sidebar works. */
+/* Andy Matuschak Mode */
+.roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+#right-sidebar {
+  background-color: #fcf5e5 !important;
+}
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: wrap;
+  display: flex;
+  /* Below is for masonry layout */
+  flex-flow: column wrap;
+}
+#right-sidebar #roam-right-sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 1 0 40%;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #bfbfbf !important;
+  border-radius: 5px;
+  background-color: rgb(247, 249, 251) !important;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  height: 780px;
+  overflow-y: scroll;
+  /* Below is for masonry layout */
+  margin-bottom: 16px;
+  min-height: fit-content;
+  width: 500px;
+}
+.roam-log-container .roam-log-page {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #fcf5e5 !important;
 }
