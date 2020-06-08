@@ -1246,8 +1246,9 @@ body {
   background-color: #ced9e0;
 }
 .block-highlight-blue {
-  background-color: #7cccff;
+  background-color: #BEE3D9;
 }
+/* expand context highlight color */
 .block-highlight-yellow {
   background-color: #ede6f9;
 }
@@ -1905,7 +1906,7 @@ div.roam-center > div:first-child {
 	 content: "";
 }
  .roam-block-container .block-border-left .flex-h-box.flex-align-start.flex-justify-start .controls .block-expand.cursor-pointer .bp3-icon-caret-down {
-	 border-color: #ff9500;
+	 border-color: #469986;
 }
  .roam-block-container .block-border-left .flex-h-box.flex-align-start.flex-justify-start .controls .simple-bullet-outer {
 	 position: relative;
