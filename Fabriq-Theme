@@ -538,7 +538,7 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: #ECF6F8; /* RTB add: bear color - solarized light background color main view */
+  background-color: #FFFFFF; /* RTB add: bear color - solarized light background color main view */
 }
 .roam-body .roam-app {
   height: 100%;
@@ -650,7 +650,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 101;
-  background-color: #ECF6F8; /* RTB change: bear background - solarized light */
+  background-color: #ffffff; /* RTB change: bear background - solarized light */
   padding-right: 16px;
   padding-left: 16px;
   display: flex;
@@ -1046,7 +1046,7 @@ body {
   margin-right: 8px;
   flex: 1 1 100%;
   word-break: break-word;
-  background-color: #ECF6F8;
+  background-color: #ffffff;
   border-radius: 10px;
   padding-right: 8px;
 }
@@ -1772,9 +1772,9 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* background for the linked references and queries query background */
 .roam-block .rm-reference-main {
-  border: 2px solid #ced9e0;
+  border: 2px solid #141e35;
   padding: 0px 16px 12px 16px;
-  background-color: #BEE3D9;	
+  background-color: #ECF6F8;	
 }
 
 .loading-astrolabe{
