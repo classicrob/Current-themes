@@ -1773,8 +1773,7 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* background for the linked references and queries query background */
 .roam-block .rm-reference-main {
-  border: 2px solid #141e35;
-  padding: 0px 16px 12px 16px;
+  border: 2px solid #46998645;
   background-color: #ECF6F8;	
 }
 
@@ -1917,6 +1916,8 @@ div.roam-center > div:first-child {
 }
 
 /* Comment button */
-.bp3-icon-comment { opacity: 100 !important;}
-.bp3-icon-comment::before { color: #A4CE64 !important; } 
+.bp3-icon-comment { opacity: 100 !important;
+transform: scale(1.5) !important; }
+.bp3-icon-comment::before { color: #469986 !important; 
+} 
 
