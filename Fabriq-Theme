@@ -1705,7 +1705,7 @@ span.rm-page-ref:hover {
 .rm-block-input {
   line-height: 1.5em;
   /* font-size: 20px; */ /* RTB add: larger font */
-  /* width: 100%; */
+  width: 90%; 
   outline: 1px solid rgba(0, 0, 0, 0);
   overflow-wrap: break-spaces;
   vertical-align: top;
@@ -1856,7 +1856,7 @@ div.roam-center > div:first-child {
 /* Below is for masonry layout */
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 800px;
+  width: 900px;
 }
 #right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
   resize: vertical;
@@ -1924,3 +1924,10 @@ padding-right: 20px;}
 .bp3-icon-comment::before { color: #5EBAC3 !important; 
 } 
 .roam-toolkit-block-mode--highlight{background-color: #BEE3D9 !important;}
+
+/* highlight color */
+.roam-highlight {
+  background-color: #bee3d985;
+  margin: -2px;
+  padding: 2px;
+}
