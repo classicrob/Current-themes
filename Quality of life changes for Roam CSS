@@ -1,4 +1,15 @@
-/* reduces font size when I'm doing an inline search with [[]] or (()) */
+.roam-toolkit-block-mode--highlight{background-color: #9580ff4d; !important;}
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* search */
+
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+}
+
+/*reduces font size when I'm doing an inline search with [[]] or (()) */
 div.bp3-elevation-3 {
   font-size: 0.7em;
 }
@@ -8,9 +19,42 @@ div.bp3-elevation-3 {
     white-space: unset;
 }
 
-/* Add scrollbars */
+/* Increases the height of the inline search box */
+div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
+   max-height: 600px !important;
+}
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+/* font changes */
+.rm-level1 {
+  font-family: 'Computer Modern Serif'; /* RTB change */
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.rm-level2 {
+  font-family: 'Computer Modern Serif' !important; /* RTB change */
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+div {
+  font-family: 'Computer Modern Serif'; /* RTB change: desired font (bear) */
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+
+textarea {
+  font-family: 'Computer Modern Serif'; /* RTB change: desired font (bear) */
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.rm-block-ref {
+    background: #d8e1e8;
+    border-bottom: 0.5px solid #d8e1e8;
+    cursor: alias;
 }
