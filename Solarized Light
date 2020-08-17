@@ -1749,7 +1749,9 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* Reference Boxes */
 /*.rm-reference-item { 
-  background-color: #ede6f9;
-    border-radius: 15px;
-    padding: 20px;
+  background-color: #ede6f9;
+    border-radius: 15px;
+    padding: 20px;
 }*/
+
+.roam-toolkit-block-mode--highlight{background-color: #c4b40461; !important;}
