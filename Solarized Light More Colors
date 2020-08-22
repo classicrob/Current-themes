@@ -1,8 +1,8 @@
 /*
 ### ROAM CUSTOM THEME ###
-> Many thanks to the Roam Slack community for all the resources, particularly @Anthony, @Mark, @al_malecha, and @vandermerwed for their assistence and patience with me that helped in the construction of this theme.  I don't know what I'm doing really, just wanted to make it pretty.
+> Many thanks to the Roam Slack community for all the resources, particularly @Anthony and @Mark for their patience with me that helped in this construction.  Mostly adapted from Anthony's bear themes, with some mix and matches from other people's codes.  I don't know what I'm doing really, just wanted to make it pretty.
 > Edits by Rob Haisfield
-> v1.whatever
+> v1.0
 */
 
 /* Editor */
@@ -1049,7 +1049,7 @@ body {
   padding-right: 8px;
 }
 .rm-level1 {
-  font-family: 'Avenir Next'; /* RTB change */
+  font-family: 'Computer Modern Serif'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
@@ -1061,7 +1061,7 @@ body {
   margin-top: -8px; /* RTB add */
 }
 .rm-level2 {
-  font-family: 'Avenir next' !important; /* RTB change */
+  font-family: 'Computer Modern Serif' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
@@ -1471,14 +1471,14 @@ body {
   padding: 0;
 }
 div {
-  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
+  font-family: 'Computer Modern Serif'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
   padding: 0px;
 }
 textarea {
-  font-family: 'Helvetica'; /* RTB change: desired font (bear) */
+  font-family: 'Computer Modern Serif'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1694,7 +1694,7 @@ span.rm-page-ref:hover {
 }
 */
 
-/* scrollbar scroll bar */
+/*scrollbar*/
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -1793,7 +1793,7 @@ visibility: hidden !important;
 }
 
 /* full width of text */
- .roam-block-container {
+.roam-block-container {
   max-width: 100% !important; 
 }
 div.roam-center > div:first-child {
@@ -1818,8 +1818,6 @@ div.roam-center > div:first-child {
     max-width: 100%;
 }
 
-
-
 /* Andy Matuschak Mode */
 .roam-center {
   flex: 1 1 100% !important;
@@ -1832,14 +1830,12 @@ div.roam-center > div:first-child {
   overflow: scroll !important;
   white-space: wrap;
   display: flex;
-  align-content: flex-start;
-/* Below is for masonry layout */
-  flex-flow: column wrap;
+  /* Below is for masonry layout */ 
 }
 #right-sidebar #roam-right-sidebar-content > div {
   position: relative;
   display: flex;
-  flex: 0 1 auto;
+  flex: 1 0 40%;
   flex-direction: column;
   padding: 10px;
   border: 1px solid #bfbfbf !important;
@@ -1847,20 +1843,18 @@ div.roam-center > div:first-child {
   background-color: rgb(247, 249, 251) !important;
   align-self: flex-start;
   margin-right: 0px !important;
-/* Below is for masonry layout */
+  height: 780px;
+  overflow-y: scroll;
+  /* Below is for masonry layout */
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 1000px;
-}
-#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
-  resize: vertical;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 1700px;
+  width: 900px;
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
-  border: 1px solid #bfbfbf;
+  border: 1px solid #000;
   border-radius: 5px;
   background-color: #fcf5e5 !important;
 }
+
+.roam-toolkit-block-mode--highlight{background-color: #bf9a286b; !important;}
