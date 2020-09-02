@@ -1825,17 +1825,20 @@ div.roam-center > div:first-child {
 }
 #right-sidebar {
   background-color: #fcf5e5 !important;
+  border: 1px solid #141e354f
 }
 #right-sidebar #roam-right-sidebar-content {
   overflow: scroll !important;
   white-space: wrap;
   display: flex;
-  /* Below is for masonry layout */ 
+  align-content: flex-start;
+/* Below is for masonry layout */
+  flex-flow: column wrap;
 }
 #right-sidebar #roam-right-sidebar-content > div {
   position: relative;
   display: flex;
-  flex: 1 0 40%;
+  flex: 0 1 auto;
   flex-direction: column;
   padding: 10px;
   border: 1px solid #bfbfbf !important;
@@ -1843,18 +1846,23 @@ div.roam-center > div:first-child {
   background-color: rgb(247, 249, 251) !important;
   align-self: flex-start;
   margin-right: 0px !important;
-  height: 780px;
-  overflow-y: scroll;
-  /* Below is for masonry layout */
+/* Below is for masonry layout */
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 900px;
+  width: 500px;
+}
+#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 1700px;
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid #bfbfbf;
   border-radius: 5px;
   background-color: #fcf5e5 !important;
 }
+
 
 .roam-toolkit-block-mode--highlight{background-color: #bf9a286b; !important;}
