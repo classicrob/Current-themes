@@ -1872,7 +1872,7 @@ div.roam-center > div:first-child {
 /* Font Changes */
 
 textarea {
-  font-family: 'Open Sans'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica Neue'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1880,7 +1880,7 @@ textarea {
 }
 
 div {
-  font-family: 'Open Sans'; /* RTB change: desired font (bear) */
+  font-family: 'Helvetica Neue'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1888,13 +1888,13 @@ div {
 }
 
 .rm-level2 {
-  font-family: 'Open Sans' !important; /* RTB change */
+  font-family: 'Helvetica Neue' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
 
 .rm-level1 {
-  font-family: 'Open Sans'; /* RTB change */
+  font-family: 'Helvetica Neue'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
