@@ -1796,44 +1796,16 @@ div.roam-center > div:first-child {
     max-width: 100%;
 }
 
-/* Andy Matuschak Mode */
-.roam-center {
+:root {
+  --right-sidebar-masonry-bg: rgb(247, 249, 251);
+  --right-sidebar-masonry-outline: #d8e1e8;
+}
+#app .roam-main .roam-body-main .roam-center {
   flex: 1 1 100% !important;
   flex-basis: 10% !important;
 }
 #right-sidebar {
-  background-color: #fcf5e5 !important;
-  border: 1px solid #141e354f
-}
-#right-sidebar #roam-right-sidebar-content {
-  overflow: scroll !important;
-  white-space: wrap;
-  display: flex;
-  align-content: flex-start;
-/* Below is for masonry layout */
-  flex-flow: column wrap;
-}
-#right-sidebar #roam-right-sidebar-content > div {
-  position: relative;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
-  padding: 10px;
-  border: 1px solid #bfbfbf !important;
-  border-radius: 5px;
-  background-color: rgb(247, 249, 251) !important;
-  align-self: flex-start;
-  margin-right: 0px !important;
-/* Below is for masonry layout */
-  margin-bottom: 16px;
-  min-height: fit-content;
-  width: 500px;
-}
-#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
-  resize: vertical;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 1700px;
+  /* container */
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
@@ -1841,14 +1813,66 @@ div.roam-center > div:first-child {
   border-radius: 5px;
   background-color: #fcf5e5 !important;
 }
-
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  flex-flow: column wrap;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  /* item */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  min-height: fit-content;
+  width: 600px;
+  background-color: var(--right-sidebar-masonry-bg) !important;
+  border: 1px solid var(--right-sidebar-masonry-outline) !important;
+  /* item header */
+  /* item content */
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 770px;
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div.flex-v-box {
+  margin-left: 0px !important;
+}
 
 .roam-toolkit-block-mode--highlight{background-color: #bf9a286b; !important;}
 
 /* Font Changes */
 
 textarea {
-  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
+  font-family: 'Open Sans'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1856,7 +1880,7 @@ textarea {
 }
 
 div {
-  font-family: 'Avenir Next'; /* RTB change: desired font (bear) */
+  font-family: 'Open Sans'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1864,13 +1888,13 @@ div {
 }
 
 .rm-level2 {
-  font-family: 'Avenir Next' !important; /* RTB change */
+  font-family: 'Open Sans' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
 
 .rm-level1 {
-  font-family: 'Avenir Next'; /* RTB change */
+  font-family: 'Open Sans'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
