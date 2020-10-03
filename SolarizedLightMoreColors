@@ -1746,9 +1746,9 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* Reference Boxes */
 /*.rm-reference-item { 
-  background-color: #ede6f9;
-    border-radius: 15px;
-    padding: 20px;
+  background-color: #ede6f9;
+    border-radius: 15px;
+    padding: 20px;
 }*/
 
 .roam-block .rm-reference-main {
@@ -1760,11 +1760,11 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 .loading-astrolabe{
 display: block;
  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box;
  background: url(https://i.imgur.com/KWl6pqT.gif) no-repeat;
-  width: 600px;
-  height: 600px;
-  padding-left: 600px; /* Equal to width of new image */
+  width: 600px;
+  height: 600px;
+  padding-left: 600px; /* Equal to width of new image */
 }
 .loading-astrolabe .wand{
 visibility: hidden !important;
@@ -1806,6 +1806,7 @@ div.roam-center > div:first-child {
 }
 #right-sidebar {
   /* container */
+  background-color: #fcf5e5 !important;
 }
 .roam-log-container .roam-log-page {
   padding: 10px;
@@ -1845,6 +1846,7 @@ div.roam-center > div:first-child {
   /* item header */
   /* item content */
 }
+
 #right-sidebar
   #roam-right-sidebar-content
   .sidebar-content
