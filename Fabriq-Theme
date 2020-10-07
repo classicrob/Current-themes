@@ -1825,51 +1825,6 @@ div.roam-center > div:first-child {
 .roam-center > div {padding-right: 0px !important;padding-left: 0px !important;}
 
 
-/* Andy Matuschak Mode */
-.roam-center {
-  flex: 1 1 100% !important;
-  flex-basis: 10% !important;
-}
-#right-sidebar {
-  background-color: #D6ECE7 !important;
-  border: 1px solid #141e354f
-}
-#right-sidebar #roam-right-sidebar-content {
-  overflow: scroll !important;
-  white-space: wrap;
-  display: flex;
-  align-content: flex-start;
-/* Below is for masonry layout */
-  flex-flow: column wrap;
-}
-#right-sidebar #roam-right-sidebar-content > div {
-  position: relative;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: column;
-  padding: 10px;
-  border: 1px solid #bfbfbf !important;
-  border-radius: 5px;
-  background-color: #ffffff !important;
-  align-self: flex-start;
-  margin-right: 0px !important;
-/* Below is for masonry layout */
-  margin-bottom: 16px;
-  min-height: fit-content;
-  width: 500px;
-}
-#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
-  resize: vertical;
-  overflow-y: auto;
-  overflow-x: hidden;
-  max-height: 1700px;
-}
-.roam-log-container .roam-log-page {
-  padding: 10px;
-  border: 1px solid #bfbfbf;
-  border-radius: 5px;
-  background-color: #ffffff !important;
-}
 
 /* thicker lines to mark bullet indentation hierarchy */
 
@@ -1930,4 +1885,78 @@ padding-right: 20px;}
   background-color: #bee3d985;
   margin: -2px;
   padding: 2px;
+}
+
+/* weird sidebar stuff with masonry mode */
+:root {
+  --right-sidebar-masonry-bg: rgb(247, 249, 251);
+  --right-sidebar-masonry-outline: #d8e1e8;
+}
+#app .roam-main .roam-body-main .roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+#right-sidebar {
+  /* container */
+  background-color: #d6ece7 !important;
+}
+.roam-log-container .roam-log-page {
+  padding: 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  background-color: #ffffff !important;
+}
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  flex-flow: column wrap;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  /* item */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-right: 0px !important;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  min-height: fit-content;
+  width: 600px;
+  background-color: var(--right-sidebar-masonry-bg) !important;
+  border: 1px solid var(--right-sidebar-masonry-outline) !important;
+  /* item header */
+  /* item content */
+}
+
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 770px;
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div.flex-v-box {
+  margin-left: 0px !important;
 }
