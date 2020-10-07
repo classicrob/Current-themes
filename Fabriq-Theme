@@ -1050,23 +1050,6 @@ body {
   border-radius: 10px;
   padding-right: 8px;
 }
-.rm-level1 {
-  font-family: 'Avenir Next'; /* RTB change */
-  font-weight: 400;
-  font-size: 1.8em;
-}
-.rm-level1 textarea {
-  line-height: 1.2;
-}
-.rm-level1 .roam-block {
-  line-height: 1.2;
-  margin-top: -8px; /* RTB add */
-}
-.rm-level2 {
-  font-family: 'Avenir Next' !important; /* RTB change */
-  font-weight: 400;
-  font-size: 1.4em;
-}
 
 /* RTB new section */
 .rm-level2 .roam-block {
@@ -1472,20 +1455,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
-div {
-  font-family: 'Avenir Next'; /* RTB change: desired change font (bear) */
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 0px;
-  padding: 0px;
-}
-textarea {
-  font-family: 'Avemor Next'; /* RTB change: desired change font (bear) */
-  font-size: 1em;
-  line-height: 1.5em;
-  margin: 0px;
-  padding: 0px;
 }
 .xtra {
   transform: scale(3);
@@ -1959,4 +1928,37 @@ padding-right: 20px;}
   > div
   > div.flex-v-box {
   margin-left: 0px !important;
+}
+
+/* CSS Fonts */
+div {
+  font-family: 'Inter'; /* RTB change: desired change font (bear) */
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+textarea {
+  font-family: 'Inter'; /* RTB change: desired change font (bear) */
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0px;
+  padding: 0px;
+}
+.rm-level1 {
+  font-family: 'Inter'; /* RTB change */
+  font-weight: 400;
+  font-size: 1.8em;
+}
+.rm-level1 textarea {
+  line-height: 1.2;
+}
+.rm-level1 .roam-block {
+  line-height: 1.2;
+  margin-top: -8px; /* RTB add */
+}
+.rm-level2 {
+  font-family: 'Inter' !important; /* RTB change */
+  font-weight: 400;
+  font-size: 1.4em;
 }
