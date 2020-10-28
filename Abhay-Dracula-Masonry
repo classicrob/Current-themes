@@ -1,5 +1,3 @@
-/* These are some light mods on Abhay Prasanna's Dracula theme, also adding in Daniel Van Der Merwe's Masonry Mode */
-
 @import url('https://abhayprasanna.github.io/better-dark-age.css');
 /* IMPORT FONTS */
 @import url('https://fonts.googleapis.com/css?family=Commissioner|Fira+Code|Bitter');
@@ -224,3 +222,12 @@ Optional border adjustments:
     margin-top: 15px !important;
 }
 
+/* Making highlights work better with page reference colors */
+
+.roam-highlight .rm-page-ref-tag {
+  color: #9580FF !important;
+}
+
+.roam-highlight .rm-page-ref-link-color, .roam-highlight .rm-page-ref-brackets {
+  color: #9580FF !important;
+}
