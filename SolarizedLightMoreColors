@@ -1850,7 +1850,7 @@ div.roam-center > div:first-child {
   resize: vertical;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 770px;
+  max-height: 1100px;
 }
 #right-sidebar
   #roam-right-sidebar-content
@@ -1868,7 +1868,7 @@ div.roam-center > div:first-child {
 /* Font Changes */
 
 textarea {
-  font-family: 'Cousine'; /* RTB change: desired font (bear) */
+  font-family: 'Inter'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1876,7 +1876,7 @@ textarea {
 }
 
 div {
-  font-family: 'Cousine'; /* RTB change: desired font (bear) */
+  font-family: 'Inter'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1884,13 +1884,13 @@ div {
 }
 
 .rm-level2 {
-  font-family: 'Cousine' !important; /* RTB change */
+  font-family: 'Inter' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
 
 .rm-level1 {
-  font-family: 'Cousine'; /* RTB change */
+  font-family: 'Inter'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
