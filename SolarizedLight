@@ -1732,7 +1732,7 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* font changes */
 .rm-level1 {
-  font-family: 'I ter'; /* RTB change */
+  font-family: 'Inter'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
