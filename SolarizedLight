@@ -1732,19 +1732,19 @@ div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
 
 /* font changes */
 .rm-level1 {
-  font-family: 'Cousine'; /* RTB change */
+  font-family: 'I ter'; /* RTB change */
   font-weight: 400;
   font-size: 1.8em;
 }
 
 .rm-level2 {
-  font-family: 'Cousine' !important; /* RTB change */
+  font-family: 'Inter' !important; /* RTB change */
   font-weight: 400;
   font-size: 1.4em;
 }
 
 div {
-  font-family: 'Cousine'; /* RTB change: desired font (bear) */
+  font-family: 'Inter'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
@@ -1752,7 +1752,7 @@ div {
 }
 
 textarea {
-  font-family: 'Cousine'; /* RTB change: desired font (bear) */
+  font-family: 'Inter'; /* RTB change: desired font (bear) */
   font-size: 1em;
   line-height: 1.5em;
   margin: 0px;
