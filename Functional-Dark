@@ -1,0 +1,93 @@
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* search */
+/* search bar full width */
+/*
+.rm-find-or-create-wrapper {
+  flex: 0 1 100% !important;
+}
+*/
+/*reduces font size when I'm doing an inline search with [[]] or (()) */
+div.bp3-elevation-3 {
+  font-size: 0.7em;
+}
+/*Wraps text when I'm doing an inline search with [[]] or (())*/
+.bp3-text-overflow-ellipsis {
+    text-overflow: unset;
+    white-space: unset;
+}
+
+/* Increases the height of the inline search box */
+div.bp3-elevation-3[style^='max-height: 300px; top: 26px; overflow: auto;'] {
+   max-height: 600px !important;
+}
+
+.rm-block-ref {
+    background: #d8e1e824;
+    border-bottom: 0.5px solid #d8e1e8;
+    cursor: alias;
+}
+
+/* freeze page titles at the top, maybe doesn't work */
+/*
+.roam-article > div > div:nth-child(1):not(.roam-log-page) {
+  position: sticky!important;
+  top: 0px!important;
+  z-index: 100!important;
+}
+.bp3-button.bp3-small, .bp3-small .bp3-button {
+    padding: 0px 30px;
+}
+.bp3-elevation-3 {
+  z-index: 10000!important;
+}
+*/
+
+/* Fix search and buttons to right side when sidebar opens */
+.roam-topbar {
+  position: fixed !important;
+  right: 0px !important;
+  z-index: 5 !important;
+  padding-right: 31px !important;
+}
+/* Move down to make up for the 45px height of topbar */
+.roam-body-main {
+  margin-top: 45px;
+}
+#right-sidebar {
+	height: 99%;
+}
+/* When sidebar opens this button appears. Need z-index so it shows on top of fixed position topbar */
+#right-sidebar > div.flex-h-box > button {
+  z-index: 5;
+  padding-top: 5px !important;
+}
+/* So that you can get a full verticle handle to resize the sidebar */
+#right-sidebar .rm-resize-handle {
+    z-index: 1;
+}
+/* Sets rounded edges around sidebar and aligns with main window */
+#roam-right-sidebar-content {
+  margin-top   : 9px;
+  border       : 1px solid var(--sidebar-background) !important;
+  border-radius: 12px !important;
+  background   : var(--background) !important;
+  margin-right : 6px !important;
+}
+/* When editing page title in sidebar this prevents it from having weird height issues */
+#right-sidebar .rm-title-textarea {
+    width: 95%;
+}
+.roam-main {
+  height: 99%;
+}
+/* Rounded edges for main window */
+.roam-body-main {
+  border       : 1px solid var(--sidebar-background) !important;
+  border-radius: 12px !important;
+  background   : var(--background) !important;
+  margin-right : 6px !important;
+  margin-left  : 6px !important;
+}
