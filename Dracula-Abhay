@@ -1,0 +1,149 @@
+@import url('https://abhayprasanna.github.io/better-dark-age.css');
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css?family=Commissioner|Fira+Code|Bitter');
+@import "../fonts/Inter/inter.css";
+
+
+:root {
+  /* FONTS */
+  --global-font             : 'Roboto';
+  --secondary-font          : 'Roboto';
+  --header-font             : 'Roboto';
+  /* WIDTH FIXES - default 568px,1032px - increase to increase WIDTH */
+  --reduce-padding-right    : 3400px;
+  --reduce-padding-left     : 3400px;
+  /* COLORS (HT: Jack Laing for [[Dracula Pro]] color theme) */
+  --page-links              : #81FFEA;
+  --attributes-color        : #FFFF80;
+  --external-links          : #8AFF80;
+  --links-hover             : #9580FF;
+  --hashtags                : #FE7FBF;
+  --body-text               : #F2F2F2;
+  --italics-color           : #FE7FBF;
+  --bold-color              : #FF9580;
+  --highlight-text-color    : #1B1A23;
+  --highlighter             : #FFFF80;
+  --background              : #1B1A23;
+  --sidebar-background      : #2B2640;
+  --sidebar-text            : #F2F2F2;
+  --page-heading            : #9580FF;
+  --daily-heading           : #9580FF;
+  --headings                : #F2F2F2;
+  --bullets                 : #7C6EAD;
+  --closed-bullets          : #313340;
+  --references              : #7C6EAD;
+  --block-reference-text    : #FF9580;
+  --namespaces              : #81FFEA;
+  --all-pages-mentions      : #FF9580;
+  --cursor                  : #F2F2F2;
+  --icons                   : #7C6EAD;
+  --icons-hover             : #81FFEA;
+  --filter-icon             : #8AFF80;
+  /* FONT SIZES */
+  --main-font-size          : 1em;
+  --page-head-font-size     : 2.2em;
+  --h1-font-size            : 2em;
+  --h2-font-size            : 1.6em;
+  --h3-font-size            : 1.2em;
+  --sidebar-h1-size         : 2.2em;
+  /* DROPDOWN MENU */
+  --dropdown-menu-background: #2B2640;
+  --dropdown-menu-highlight : #1B1A23;
+  --dropdown-menu-text      : #F2F2F2;
+  --dropdown-newpage        : #9580FF;
+  /* SEARCH BAR */
+  --search-bar-background   : #1B1A23;
+  --search-bar-text         : #F2F2F2;
+  /* KANBAN CARD COLORS */
+  --kanban-main-background  : #1B1A23;
+  --kanban-column-background: #2A2C37;
+  --kanban-card-background  : #1B1A23;
+  --kanban-text-hover       : #81FFEA;
+}
+/* Roam Toolkit Vim mode */
+.roam-toolkit-block-mode--highlight{background-color: #7c6ead59; !important;}
+
+/* Rainbow indentation */
+/* 
+Feel free to adjust the colors - this one loops every
+7 colors like the rainbow but you can change that to 
+cycle earlier or choose more unique colors.
+To add deeper indents:
+1. Add { > div.flex-v-box > div } incrementally to the first line, and
+2. Add {> div.flex-v-box > div:nth-child(n) } incrementally to the second line
+*/
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div {
+    border-left-color: #F2F2F2AD!important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div,
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #9580FFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #92FFFFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #8AFF80AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FFFF80AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF9580AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FE7FBFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #DA53EEAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #6600EDAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #0079FFAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #00F11DAD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FFEF00AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF7F00AD !important;
+}
+#rm-log-container > div > div > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n) > div.flex-v-box > div:nth-child(n),
+.flex-v-box > div:nth-child(n) > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div > div.flex-v-box > div {
+    border-left-color: #FF0900AD !important;
+}
+
+/* 
+Optional border adjustments:
+1. You can add a border-radius: 5px or more to get an interesting delineation
+2. You can adjust the width of the border but make sure to adjust margin to align the border with the bullets  
+*/
+.block-border-left {
+    border-left-width: 2px !important;
+    margin-left: 5px !important;  
+}
+
+/* Right side bar reference boxes */
+.rm-reference-item { 
+  background-color: #2B2640;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 15px !important;
+}
+
