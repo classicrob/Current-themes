@@ -1834,7 +1834,7 @@ div.roam-center > div:first-child {
   border-radius: 5px;
   margin-bottom: 16px;
   min-height: fit-content;
-  width: 600px;
+  width: 500px;
   background-color: var(--right-sidebar-masonry-bg) !important;
   border: 1px solid var(--right-sidebar-masonry-outline) !important;
   /* item header */
@@ -1964,4 +1964,106 @@ To add deeper indents:
 /* Thicker indentation marker lines */
 .block-border-left {
 	 border-left: 3px solid;
+}
+
+/* Thicker indentation marker lines */
+.block-border-left {
+	 border-left: 3px solid;
+}
+
+/*RR change: additional text styles, bold and italics*/
+.roam-app strong {
+  color: #6c71c4 !important;
+}
+
+.roam-app em {
+  color: #d33682;
+}
+
+/*RR change: Markdown Links */
+
+.roam-app a {
+  color: #2aa198;
+}
+
+.roam-app a:focus, 
+.roam-app a:hover {
+  color: #2aa198;
+  text-decoration: underline;
+}
+
+.rm-page-ref-tag {
+  color: #268bd2	;
+}
+
+/* underlining for nested pages complex pages without brackets */
+
+:root {
+    --custom-background-color: lightsteelblue;
+    --custom-background-color-hover: #cb4b16;
+    }
+
+
+.rm-page-ref-link-color{
+   color:#9d6500 !important;
+    background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+
+.rm-page-ref-link-color:hover{
+   color:#cb4b16 !important;
+    background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+    text-decoration: none;
+    line-height: 24px;
+    padding-bottom: 4px;
+}
+
+.rm-page-ref-link-color .rm-page-ref-link-color {
+color: #9d6500 !important;
+  background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 28px;
+    padding-bottom: 8px;
+}
+
+.rm-page-ref-link-color .rm-page-ref-link-color:hover {
+color: #cb4b16 !important;
+  background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 28px;
+    padding-bottom: 8px;
+}
+
+
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color {
+color: #9d6500 !important;
+background: linear-gradient(0deg, var(--custom-background-color) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 32px;
+    padding-bottom: 12px;
+}
+
+
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color:hover {
+color: #cb4b16 !important;
+background: linear-gradient(0deg, var(--custom-background-color-hover) 2px, white 1px, transparent 1px);
+    background-position: 0 100%;
+   line-height: 32px;
+    padding-bottom: 12px;
+}
+
+.rm-page-ref:hover {
+  text-decoration: underline;
+}
+.rm-page-ref-tag {
+  color: #a7b6c2;
+}
+.rm-page-ref-brackets {
+  color: #268bd261; /* color of brackets*/
+}
+.rm-page-ref-link-color {
+  color: #9d6500; /* color of page link references*/
 }
