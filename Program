@@ -1,0 +1,70 @@
+*label: Beginning
+*header: Welcome to your first GuidedTrack program!
+We're glad to have you here. You'll notice that what you see highlighted on the left is what is showing in the preview on the right.
+
+People will move on to the next page down in the text of this program by pressing on the button. Code is executed top to bottom, hopefully you'll get a sense for what this means by previewing the program.
+
+*You can add to this program by placing your cursor and typing. Rearrange it through cut and paste.*
+
+*button: Next page
+
+*question: First off: What's your name?
+	*save: userName
+
+You can add text, multimedia, lists, and more. Check out the Content section of the toolbar to learn how.
+*image: https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FRobAndHisNotes%2F87_ZJIfisb.png?alt=media&token=88dd7ecc-8861-4a10-96d2-ebbc0be26ec2
+	*caption: The Content section of the toolbar
+	
+*button: Next page
+
+
+Pages always end with something the user interacts with. This could include buttons like you've seen or a question. Check the Interactions section of the toolbar for more!
+*question: Did you know you can put videos on a page?
+	Yes
+		*video: https://www.youtube.com/watch?v=SC4xMk98Pdc
+		*button: Next
+	No
+		You can do it by clicking on "video" from the content section of the toolbar or by just writing it out like you see in the highlighted code
+		*video: https://www.youtube.com/watch?v=SC4xMk98Pdc
+		Congratulations! Now you know.
+		*button: Next
+		
+		
+
+You can also ask follow-up questions based on the user's response through indentation. 
+*question: Can you speak Spanish?
+	*save: Spanish
+	Yes
+		¡Hola, {userName}!
+		*button: Next
+	No
+		I'm sorry to hear that...
+		*question: Do you want to learn?
+			Yes
+				Too bad! We don't teach it.
+				*button: Next
+			No
+
+*if: Spanish = "Yes"
+	This is another way you can change the flow of a program! You can save a user's past choice and only give certain content based on their answers.
+	*image: https://media.makeameme.org/created/what-if-soy-26fc0eb6f8.jpg
+	*button: Next
+	
+
+You can ask many different types of questions. Go to questions in the toolbar and change the *Type* to whatever you want. Try playing with it!
+*image: https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FRobAndHisNotes%2FZp2srQ8vA6.png?alt=media&token=beec518f-e331-4c99-bd83-2952cfe4fd1e
+*button: Next
+
+When the user answers questions, GuidedTrack collects data! You can click here to see what participant data is collected.
+*image: https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FRobAndHisNotes%2F8slPrOWIMq.png?alt=media&token=c732819c-1a00-4600-a716-11277165c9a7
+*button: Next
+
+
+*question: Would you like to keep playing with this program or start over?
+	*tip: You'll always be able to access this program by going to your program list.
+	Finish the program
+	Start over
+		*goto: Beginning
+			--This will take you back to the *label at the beginning with the same name.
+		
+
