@@ -1,0 +1,2313 @@
+/* Original Dark Age theme by @shodty */
+
+
+/* Love this theme? Say thanks via [PayPal](https://www.paypal.me/abhayprasanna) or Venmo @Abhay-Prasanna
+
+/*---------------------------------------------------------------------------*/
+
+
+/* MAIN BODY AND BLOCK COLORS */
+
+.roam-body-main {
+	margin-top: 45px;
+	border-radius: 12px;
+	background: var(--background);
+	margin-right: 6px;
+	margin-left: 9px;
+}
+
+.rm-bullet__inner {
+	background-color: var(--bullets);
+}
+
+.rm-bullet--closed .rm-bullet__inner {
+	border: 4px solid var(--closed-bullets) !important;
+	/* !important needed */
+}
+
+.rm-bullet__inner:hover {
+	background-color: var(--icons-hover);
+}
+
+.rm-caret {
+	color: var(--links--hover);
+	opacity: 1 !important;
+	/* !important needed */
+	position: relative;
+	top: -1.5px;
+}
+
+.rm-caret-hidden {
+	opacity: 0 !important;
+	/* !important needed */
+}
+
+.rm-caret:hover {
+	color: var(--icons-hover);
+}
+
+.version-bullet {
+	background-color: var(--sidebar-background) !important;
+	/* !important needed */
+	color: var(--body-text);
+}
+
+.rm-block-input {
+	color: var(--body-text);
+	background-color: var(--sidebar-background);
+	padding-left: 6px;
+	border-radius: 5px;
+}
+
+
+/* Block reference */
+
+.block-ref-count-button {
+	color: var(--icons);
+	background: transparent;
+	border-bottom: 1.5px solid var(--block-reference-text) !important;
+	/* !important needed */
+	z-index: 1000;
+	transition: color 0.3s ease;
+	font-family: var(--header-font);
+	margin-right: 6px;
+	margin-top: 2px;
+	border-radius: 0;
+}
+
+.block-ref-count-button:hover {
+	color: var(--icons-hover);
+	transition: color 0.3s ease, border 0.3s ease;
+}
+
+.rm-block-ref,
+span[style*="color: red"] {
+	color: var(--body-text);
+	border-bottom: dashed 1px var(--references);
+	transition: all 0.3s ease;
+	padding: 0px;
+}
+
+.rm-block-ref:hover,
+span[style*="color: red"]:hover {
+	background-color: transparent;
+	border-bottom: solid 1px var(--italics-color);
+	transition: all 0.3s ease;
+}
+
+/* Filter icon */
+
+.bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
+	color: var(--filter-icon) !important;
+	/* !important needed */
+}
+
+
+/* Inline Block References */
+
+.rm-inline-references {
+	background-color: var(--background);
+	box-shadow: var(--references) 40px 0px 50px -40px inset;
+	padding: 5px 20px 5px;
+}
+
+.rm-inline-references:before {
+	color: var(--block-reference-text);
+	content: "Block References";
+	font-weight: 500;
+}
+
+.rm-zoom-mask {
+	color: var(--body-text);
+}
+
+.rm-zoom-item-content.rm-zoom-collapsed-item {
+	color: var(--references);
+	text-decoration: underline;
+}
+
+.bp3-icon-caret-right {
+	color: var(--icons) !important;
+	/* !important needed */
+}
+
+.squish[style*="color: rgb(138, 155, 168);"]>svg>g>path {
+	fill: var(--icons) !important;
+	/* !important needed */
+}
+
+.bp3-icon-standard.bp3-icon-circle {
+	color: var(--icons);
+}
+
+
+/* BETTERROAM-LIKE STYLE
+Original BetterRoam theme by @linuz90
+Love this theme? Say thanks via Paypal: https://www.paypal.me/linuz90 UPDATE */
+
+.roam-article {
+	padding: 10px 30px 120px 30px !important;
+	/* !important needed */
+}
+
+.roam-app,
+.roam-body-main.flex-h-box,
+.roam-body,
+body {
+	background: var(--sidebar-background);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* TOPBAR  & SIDEBAR STYLE AND COLORS */
+
+
+/* Right sidebar and topbar */
+
+#right-sidebar,
+.rm-topbar {
+	background-color: var(--sidebar-background);
+}
+
+.sidebar-content {
+	margin-left: 4px;
+	margin-right: 6px;
+	padding: 5px;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+#roam-right-sidebar-content {
+	border: 1px solid var(--sidebar-background);
+	border-radius: 12px;
+	background: var(--background);
+	margin-right: 6px;
+}
+
+#right-sidebar .rm-title-textarea {
+	width: 95%;
+}
+
+#right-sidebar > .flex-h-box {
+  margin-bottom: 8px;
+}
+
+.roam-main {
+	height: 99%;
+}
+
+
+/* fix references layout in right sidebar */
+
+.sidebar-content .rm-reference-container {
+	border: 0;
+	padding: 0;
+}
+
+
+/* Left sidebar */
+
+.roam-sidebar-container {
+	background-color: transparent !important;
+	/* !important needed */
+	-webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+}
+
+.rm-topbar {
+	border-bottom: 0;
+}
+
+/* Compact formatting */
+
+.log-button,
+.page,
+.starred-pages-wrapper,
+td {
+	line-height: normal;
+}
+
+
+/* fix to ensure search popover does not slide under left sidebar when open */
+
+.rm-find-or-create-wrapper:focus-within {
+	flex: 1 1 30% !important;
+	/* !important needed */
+}
+
+div[style*="border-bottom: 1px solid rgb(138, 155, 168);"] {
+	border-bottom: 1px solid var(--references) !important;
+	/* !important needed */
+}
+
+div[style*="border-bottom-color: rgb(138, 155, 168);"] {
+	border-bottom-color: var(--references) !important;
+	/* !important needed */
+}
+
+
+/* Ensure right sidebar properly styled via Murf */
+
+#right-sidebar .rm-resize-handle {
+	z-index: 1;
+}
+
+#right-sidebar {
+	height: 99%;
+}
+
+
+/* Hide sidebar button visibility */
+
+.bp3-icon-menu-closed {
+	transition: opacity 0.3s ease !important;
+	/* !important needed */
+}
+
+
+/* Block search dropdown menu */
+
+.rm-autocomplete-result {
+	color: var(--dropdown-menu-text) !important;
+	/* !important needed */
+}
+
+span[style*="color: rgb(129, 145, 157);"] {
+  color: var(--icons) !important;
+}
+
+/* Left sidebar text color (CREDIT - Roam-util)*/
+
+.roam-sidebar-container .rm-db-title-container .rm-db-title,
+.roam-sidebar-container .rm-db-title-container .rm-db-title .bp3-icon.bp3-icon-chevron-down.expand-icon,
+.starred-pages-wrapper>div>span {
+	color: var(--icons);
+	transition: color 0.3s ease !important;
+	/* !important needed */
+}
+
+.log-button,
+.page {
+	color: var(--sidebar-text) !important;
+	/* !important needed */
+}
+
+
+/* Left sidebar hover color (CREDIT - Roam-util)*/
+
+.log-button:hover,
+.page:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .top-row:hover,
+.roam-sidebar-container .rm-db-title-container .rm-db-title .bp3-icon.bp3-icon-chevron-down.expand-icon:hover {
+	background-color: unset !important;
+	/* !important needed */
+	color: var(--icons-hover) !important;
+	/* !important needed */
+	transition: color 0.3s ease !important;
+	/* !important needed */
+}
+
+
+/* MOBILE */
+
+
+/* Mobile bar (HT: Azlen) */
+
+#rm-mobile-bar {
+	background-color: var(--sidebar-background) !important;
+	/* !important needed */
+}
+
+#rm-mobile-bar .bp3-button i::before,
+#rm-mobile-bar .bp3-button::before {
+	color: var(--icons) !important;
+	/* !important needed */
+}
+
+
+/* align mobile bar buttons */
+
+.bp3-button.bp3-minimal.rm-mobile-button.dont-unfocus-block[style*="padding: 6px 4px 4px;"],
+.bp3-button.bp3-minimal.rm-mobile-button.dont-unfocus-block[style*="padding: 6.1px 4px 4px;"] {
+	margin: 6px 4px;
+	transform: scale(1.2);
+}
+
+#mobile-more-icon-button>i {
+	margin: 14px 4px !important;
+	/* !important needed */
+	transform: scale(1.2) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* FONTS. TEXT STYLING, AND COLORS */
+
+
+/* Global Font */
+
+body,
+div,
+textarea {
+	font-family: var(--global-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.rm-italics,
+em {
+	color: var(--italics-color);
+}
+
+.rm-bold,
+strong {
+	color: var(--bold-color);
+}
+
+
+/* Headings */
+
+h1 {
+	font-size: var(--page-head-font-size);
+}
+
+.rm-title-textarea {
+	color: var(--body-text);
+}
+
+
+/* Cursor color */
+
+.roam-body .roam-app {
+	caret-color: var(--cursor);
+}
+
+
+/* Body text color */
+
+.roam-body .roam-app {
+	color: var(--body-text);
+}
+
+
+/* Left sidebar separator color  */
+
+div[style*="background-color: rgb(57, 75, 89);"] {
+	background-color: var(--icons) !important;
+	/* !important needed */
+}
+
+
+/* Heading/Header Colors */
+
+.rm-heading-level-1>.rm-block__self .rm-block__input {
+	color: var(--heading1);
+	font-family: var(--header-font);
+}
+
+.rm-heading-level-2>.rm-block__self .rm-block__input {
+	color: var(--heading2);
+	font-family: var(--header-font) !important;
+	/* !important needed */
+}
+
+.rm-heading-level-3>.rm-block__self .rm-block__input {
+	color: var(--heading3);
+	font-family: var(--header-font);
+}
+
+
+/* Page title & Daily date color */
+
+.rm-title-display,
+.level2,
+.rm-ref-page-view-title>a {
+	color: var(--page-heading) !important;
+	/* !important needed */
+	font-family: var(--header-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transition: color 0.3s ease;
+}
+
+
+/* Right sidebar collapsed outlines */
+
+#roam-right-sidebar-content a[style*="font-weight: bold; cursor: pointer;"] {
+	color: var(--page-heading);
+	font-family: var(--header-font);
+	font-weight: 500 !important;
+	/* !important needed */
+}
+
+
+/* Main link coloring + hover */
+
+.rm-alias--block {
+	color: var(--page-links);
+	transition: color 0.3s ease;
+	text-decoration: underline dotted var(--references);
+	font-style: italic;
+}
+
+.rm-alias--page {
+	color: var(--page-links);
+	transition: color 0.3s ease;
+	font-style: italic;
+}
+
+.rm-alias--external,
+a {
+	color: var(--external-links);
+	transition: color 0.3s ease;
+}
+
+
+/* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
+
+.bp3-text-overflow-ellipsis a,
+.rm-pages-title-text strong {
+	color: var(--page-links);
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.rm-page-ref,
+.rm-page-ref--link {
+	color: var(--page-links);
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+.rm-page-ref__brackets {
+	color: var(--references);
+}
+
+.rm-page-ref--tag {
+	color: var(--hashtags);
+	font-weight: 500;
+	padding-left: 2px;
+	padding-right: 2px;
+	transition: color 0.3s ease;
+}
+
+.rm-page-ref--tag:hover,
+.rm-page-ref:hover,
+.rm-pages-title-text strong:hover,
+.rm-ref-page-view-title>a>span[style*="text-decoration: underline"] {
+	color: var(--links-hover);
+	text-decoration: none !important;
+	/* !important needed */
+	transition: color 0.3s ease;
+}
+
+.rm-page-ref--link:hover,
+a:focus,
+a:hover {
+	color: var(--links-hover);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+
+/* Attribute links */
+
+.rm-attr-ref {
+	color: var(--attributes-color);
+}
+
+
+/* Block and Page embed */
+
+.rm-embed--page.rm-embed-container {
+	background-color: var(--background);
+	margin-bottom: 0;
+	padding: 10px 20px 10px 15px !important;
+	/* !important needed */
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px var(--references);
+}
+
+.rm-embed--page.rm-embed-container::before {
+	content: "Page Embed";
+	color: var(--block-reference-text);
+	font-weight: 500;
+}
+
+.rm-embed__content .rm-reference-container {
+	border: none;
+}
+
+.rm-embed__content .rm-reference-main {
+	border-color: var(--references);
+}
+
+.rm-embed-margin-action {
+	background-color: var(--closed-bullets) !important;
+	/* !important needed */
+}
+
+.rm-embed-margin-action.rm-not {
+	margin-left: -7px;
+}
+
+.rm-embed-margin-action.rm-active {
+	margin-left: -7px;
+}
+
+.rm-embed-container {
+	margin-left: -20px;
+	background-color: transparent !important;
+}
+
+.rm-embed-edit {
+	background-color: transparent !important;
+	/* !important needed */
+	padding-top: 5px;
+}
+
+.rm-embed-inner-block-hide {
+	margin: 2px 2px 2px 4px !important;
+	/* !important needed */
+	background-color: var(--background);
+	padding: 3px 10px 3px 3px;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px var(--references);
+}
+
+.rm-embed-inner-block-hide:before {
+	content: "Block Embed";
+	color: var(--block-reference-text);
+	padding-left: 8px;
+	font-weight: 500;
+}
+
+.rm-embed-inner-block-hide .roam-block-container.rm-not-focused.block-bullet-view {
+	margin-left: 6px;
+}
+
+.rm-embed-container .rm-page__title {
+	color: var(--page-heading);
+	font-family: var(--header-font);
+	padding-top: 5px;
+}
+
+.rm-nested-refs {
+        background-color: transparent;
+}
+
+.kanban-card .rm-embed-container {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Namespace text color [[roam/css]] when using CTRL+C CTRL+L */
+
+.rm-page-ref--namespace {
+	color: var(--namespaces);
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+.rm-page-ref--namespace:hover {
+	color: var(--links-hover);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+
+/* Highlights */
+
+.rm-highlight,
+.rm-highlight:hover {
+	color: var(--highlight-text-color);
+	background-color: var(--highlighter);
+}
+
+.block-highlight-yellow {
+	background: var(--dropdown-menu-background) !important;
+	/* !important needed */
+}
+
+
+/* highlight adjustments */
+
+.rm-highlight .rm-page-ref--link,
+.rm-highlight .rm-page-ref--tag,
+.rm-highlight .rm-page-ref__brackets,
+.rm-highlight .rm-bold,
+.rm-highlight .rm-italics {
+	background-color: var(--background);
+	opacity: 0.9;
+	padding: 0px 3px 0px 3px;
+}
+
+
+/* Word Count */
+
+.bp3-button:not([class*="bp3-intent-"]) {
+	color: var(--body-text);
+	font-family: var(--secondary-font);
+	background: var(--sidebar-background) !important;
+	/* !important needed */
+	transition: color 0.3s ease;
+	padding: 0px 10px 0px 10px;
+	transform: scale(0.9);
+}
+
+
+/* Query */
+
+.rm-query-title {
+	background: var(--sidebar-background) !important;
+	/* !important needed */
+	color: var(--block-reference-text) !important;
+	/* !important needed */
+	font-weight: 500;
+	box-shadow: 0 0 2px 1px var(--references);
+	border-radius: 5px;
+	padding-top: 4px !important;
+	/* !important needed */
+	padding-bottom: 4px !important;
+	/* !important needed */
+}
+
+.rm-query {
+	box-shadow: 0 0 2px 1px var(--references);
+	border-radius: 5px;
+	border: transparent;
+	padding: 0;
+}
+
+.rm-ref-page-view {
+	margin-right: 20px;
+}
+
+
+/* Alias */
+
+span[style*="background-color: rgb(235, 241, 245);"] {
+	background: var(--sidebar-background) !important;
+	/* !important needed */
+	color: var(--block-reference-text) !important;
+	/* !important needed */
+	border: 1px solid var(--body-text);
+	transition: color 0.3s ease, border 0.3s ease;
+}
+
+
+/* diagram */
+
+svg[style*="background-color: rgb(86, 112, 134);"] {
+	background: var(--closed-bullets) !important;
+	/* !important needed */
+}
+
+div[style*="background-color: white"] {
+	background: var(--sidebar-background) !important;
+	/* !important needed */
+}
+
+svg[style*="background-color: rgb(86, 112, 134);"] g rect {
+	fill: var(--background);
+}
+
+rect[fill="#fff"] {
+	fill: var(--links-hover) !important;
+	/* !important needed */
+}
+
+svg[style*="background-color: rgb(86, 112, 134);"] foreignObject {
+	cursor: -webkit-grab;
+	cursor: grab;
+}
+
+svg[style*="background-color: rgb(86, 112, 134);"] foreignObject .rm-input {
+	background-color: transparent !important;
+	/* !important needed */
+	color: var(--background);
+}
+
+line[style*="stroke: black;"] {
+	stroke: var(--body-text) !important;
+	/* !important needed */
+}
+
+button {
+  background-color: var(--icons);
+  color: var(--background);
+}
+
+/* Reaction */
+
+.rm-emoji-button {
+	background: transparent !important;
+	/* !important needed */
+	border: 1px solid #7C6EAD !important;
+	/* !important needed */
+}
+
+.rm-emoji-number {
+	color: var(--body-text);
+}
+
+.rm-emoji-tooltip {
+	color: var(--page-links);
+}
+
+span[style*="color: rgb(167, 182, 194);"] {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+
+/* chart */
+
+svg[style*="background-color: white;"] {
+	background: transparent !important;
+	/* !important needed */
+}
+
+g circle {
+	fill: var(--links-hover) !important;
+	/* !important needed */
+}
+
+
+/* Calculation */
+
+.dont-focus-block.rm-calc-val {
+	background: var(--kanban-column-background);
+	padding: 3px 6px 4px;
+	color: var(--body-text);
+	border-radius: 5px;
+}
+
+.dont-focus-block.rm-calc-val:before {
+	content: "Calc: ";
+	color: var(--bold-color);
+}
+
+
+/* Calendar */
+
+.bp3-datepicker {
+	background-color: var(--sidebar-background);
+}
+
+.DayPicker-Day:hover {
+	background: var(--references) !important;
+	/* !important needed */
+}
+
+.bp3-divider {
+	border-color: var(--references);
+}
+
+.bp3-datepicker-caption {
+	background-color: #FAFAFA;
+	border-radius: 5px;
+}
+
+.bp3-datepicker-day-wrapper {
+	color: var(--body-text);
+}
+
+.bp3-datepicker .DayPicker-Day.DayPicker-Day--outside {
+	opacity: 0.4;
+}
+
+.bp3-icon-chevron-left,
+.bp3-icon-chevron-right,
+.bp3-icon-double-caret-vertical {
+	color: var(--icons) !important;
+	/* !important needed */
+}
+
+
+/* Kanban Card Styling */
+
+.kanban-column-container {
+	background-color: var(--kanban-main-background);
+	border-radius: 4px;
+}
+
+.kanban-board {
+	background-color: transparent;
+}
+
+.kanban-title {
+	color: var(--links-hover);
+}
+
+.kanban-column {
+	background-color: var(--kanban-column-background);
+	border-radius: 4px;
+}
+
+.kanban-card {
+	background-color: var(--kanban-card-background);
+	border-radius: 4px;
+}
+
+.kanban-card:hover {
+	color: var(--kanban-text-hover);
+	background-color: var(--icons);
+	transition: background-color 0.3s ease;
+}
+
+
+/* Pomodoro */
+
+.rm-pomodoro {
+	padding: 5px 10px 3px 3px !important;
+	/* !important needed */
+}
+
+.bp3-button.rm-pomodoro.running {
+	background: #E91E63 !important;
+	/* !important needed */
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+.bp3-button.rm-pomodoro.break {
+	background: #4CAF50 !important;
+	/* !important needed */
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+
+/* JSS warning */
+
+.bp3-button.dont-focus-block {
+	background: var(--sidebar-background);
+	color: var(--body-text) !important;
+	/* !important needed */
+	font-family: var(--secondary-font);
+	font-weight: Bold;
+}
+
+div[style*="background: rgb(255, 243, 205);"] {
+	background-color: var(--closed-bullets) !important;
+	/* !important needed */
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* REFERENCE SECTION */
+
+
+/* Reference Background Color + Spacing Fixes */
+
+.rm-reference-item {
+	background-color: transparent;
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid var(--references);
+}
+
+.rm-level1 {
+	margin-bottom: 20px;
+}
+
+
+/* Reference Section Divider */
+
+.rm-reference-container {
+	border-top: 1px double var(--references);
+	padding-top: 15px;
+}
+
+
+/* Remove second small line (HT Hasan Yalcinkaya) */
+
+.rm-reference-container .dont-focus-block {
+	border-top: 0;
+}
+
+
+/* Daily Notes Divider */
+
+.roam-log-page {
+	border-bottom: 1.5px solid var(--references) !important;
+	/* !important needed */
+	border-top: 0 !important;
+	/* !important needed */
+	padding: 0 0 30px 0 !important;
+	/* !important needed */
+	margin: 0 !important;
+	/* !important needed */
+}
+
+.roam-log-page.roam-log-preview {
+	color: var(--references);
+}
+
+
+/* Path text color for Linked References and Zoom path view */
+
+.parent-path-wrapper {
+	color: var(--body-text);
+}
+
+.rm-zoom.zoom-path-view {
+	margin: 0;
+}
+
+.rm-zoom-item-content {
+	color: var(--page-links);
+}
+
+.rm-zoom-mask {
+	background: transparent !important;
+	/* !important needed */
+}
+
+
+/* Unlinked References */
+
+strong[style*='color: rgb(206, 217, 224);'] {
+	color: var(--bold-color) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* SEARCH BOX */
+
+
+/* Search box background color */
+
+.bp3-input,
+.rm-pages-toolbar .toolbar-search-group .search-input {
+	background: var(--search-bar-background);
+	color: var(--body-text);
+}
+
+
+/* Search box placeholder text color */
+
+.bp3-input::placeholder {
+	color: var(--search-bar-text);
+	opacity: 0.5;
+}
+
+.bp3-input.bp3-active,
+.bp3-input:focus {
+	box-shadow: 0 0 4px 1px var(--references);
+}
+
+
+/* Search box "Recent" color */
+
+div[style*="padding: 6px; color: rgb(206, 217, 224);"] {
+	padding: 6px;
+	color: var(--page-links) !important;
+	/* !important needed */
+}
+
+
+/* Search box input text color */
+
+.bp3-input-group input {
+	color: var(--search-bar-text);
+}
+
+.rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item span[style*="yellow"],
+.rm-pages-title-col span[style*="yellow"] {
+	background-color: var(--highlighter) !important;
+	/* !important needed */
+	color: var(--highlight-text-color);
+}
+
+
+/* Dropdown page menu hover highlight */
+
+.rm-menu-item:hover {
+	background: var(--dropdown-menu-highlight);
+}
+
+
+/* New page text color */
+
+.rm-new-page {
+	color: var(--dropdown-newpage) !important;
+	/* !important needed */
+}
+
+.rm-search-list-item {
+	color: var(--dropdown-menu-text) !important;
+	/* !important needed */
+}
+
+
+/* Ctrl-Shift-9 menu */
+
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-enter-done>div>div>div>div:nth-child(n)>input {
+	background-color: var(--background);
+	color: var(--body-text);
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.bp3-menu-item {
+	color: var(--body-text);
+}
+
+.bp3-menu-item.bp3-active,
+.bp3-menu-item:hover {
+	background-color: var(--background);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* ALL PAGES STYLING */
+
+
+/* Top bar size fixes */
+
+.rm-all-pages .table .rm-pages-row .rm-pages-checkbox-col {
+	padding-right: 0;
+}
+
+
+/* Row background color */
+
+.rm-pages-row.rm-pages-row-header {
+	background-color: var(--sidebar-background) !important;
+	/* !important needed */
+	border-bottom: 1px solid var(--links-hover);
+}
+
+.title-children-text {
+	color: var(--body-text);
+}
+
+.sorted-header-text {
+	color: var(--icons-hover);
+}
+
+.bp3-icon.bp3-icon-chevron-down.sort-button.desc.focused {
+	color: var(--icons-hover);
+}
+
+.bp3-icon.bp3-icon-chevron-up.sort-button.focused {
+	color: var(--icons-hover);
+}
+
+.rm-zoom-chevron {
+	color: var(--icons) !important;
+	/* !important needed */
+}
+
+
+/* Title Header */
+
+.bp3-text-overflow-ellipsis,
+.rm-pages-col,
+.rm-pages-sort-header {
+	font-size: 0.85em;
+	color: var(--body-text);
+}
+
+
+/* Mentions Pill */
+
+.rm-clickable-pill,
+.rm-clickable-pill.level1-pill,
+.rm-clickable-pill.level2-pill,
+.rm-clickable-pill.level3-pill,
+.rm-clickable-pill.level4-pill {
+	color: var(--background);
+	background: var(--all-pages-mentions);
+	opacity: 1;
+	padding: 2px 10px;
+	width: 42px;
+	border-radius: 2px;
+}
+
+.rm-clickable-pill.level1-pill {
+	background: var(--all-pages-mentions);
+	filter: hue-rotate(-10deg);
+}
+
+.rm-clickable-pill.level3-pill {
+	background: var(--all-pages-mentions);
+	filter: hue-rotate(-20deg);
+}
+
+.rm-clickable-pill.empty-pill {
+	color: #F2F2F2;
+	background: var(--background);
+}
+
+.rm-clickable-pill:hover {
+	background: var(--links-hover);
+}
+
+
+/* Checkbox */
+
+.bp3-control input:checked~.bp3-control-indicator {
+	background: rgb(27, 159, 28);
+}
+
+.bp3-control input:checked~.bp3-control-indicator:hover {
+	background: rgb(1, 122, 69);
+}
+
+.bp3-control.bp3-checkbox .bp3-control-indicator {
+	border-radius: 25px;
+}
+
+
+/* Dropdown Menu Styling */
+
+.bp3-elevation-3,
+.bp3-menu,
+.bp3-popover-content {
+	background-color: var(--dropdown-menu-background) !important;
+	/* !important needed */
+	color: var(--page-links) !important;
+	/* !important needed */
+}
+
+.bp3-menu {
+	border-radius: 10px;
+	padding: 2px 8px 8px;
+}
+
+.bp3-popover-content {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+}
+
+.bp3-elevation-3 .dont-unfocus-block:hover,
+.bp3-menu a:hover {
+	background: var(--dropdown-menu-highlight);
+}
+
+.bp3-elevation-3 .dont-unfocus-block:hover .bp3-text-overflow-ellipsis {
+	color: var(--links-hover);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.bp3-menu-item-label {
+	color: var(--body-text) !important;
+}
+
+.bp3-elevation-3 .dont-unfocus-block[style*="background-color: rgb(213, 218, 223);"],
+.bp3-popover-content .rm-menu-item[style*="background-color: rgb(213, 218, 223);"] {
+	background-color: var(--dropdown-menu-highlight) !important;
+}
+
+.bp3-text-overflow-ellipsis {
+	color: var(--page-links);
+}
+
+button[style*="padding: 4px 8px;"] {
+	color: black;
+}
+
+.bp3-input.bp3-round.bp3-minimal.search-input {
+	background: var(--sidebar-background);
+}
+
+.bp3-menu-divider {
+	border-color: var(--references);
+}
+
+button[style*="background-color: white;"] {
+	background: transparent !important;
+	/* !important needed */
+	border: none !important;
+	/* !important needed */
+	color: var(--references) !important;
+	/* !important needed */
+}
+
+button[style*="background-color: rgba(72, 176, 240, 0.5);"] {
+	background: var(--background) !important;
+	/* !important needed */
+	border: solid 1px var(--icons-hover) !important;
+	/* !important needed */
+	color: var(--references) !important;
+	/* !important needed */
+}
+
+button[style*="background-color: rgba(72, 176, 240, 0.5);"]:hover,
+button[style*="background-color: white;"]:hover {
+	color: var(--icons-hover) !important;
+}
+
+.bp3-icon-standard {
+	color: var(--icons) !important;
+}
+
+.bp3-icon-standard:hover {
+	color: var(--icons-hover) !important;
+	transition: color 0.3s ease;
+}
+
+
+/* Button Styling */
+
+.bp3-button {
+	background-color: transparent;
+	text-transform: initial;
+	border: 0;
+}
+
+.bp3-button[class*="bp3-icon-"]::before,
+.bp3-icon-filter,
+.bp3-button.bp3-minimal.bp3-small,
+.bp3-icon.bp3-icon-calendar.filter-icon,
+.bp3-icon.filter-icon.bp3-icon-eye-open,
+.bp3-button.bp3-icon-calendar,
+.bp3-icon.bp3-icon-sort {
+	color: var(--icons) !important;
+	/* !important needed */
+	background: transparent !important;
+	/* !important needed */
+	opacity: 1;
+}
+
+.bp3-button[class*="bp3-icon-"]:hover,
+.bp3-button[class*="bp3-icon-"]:hover::before,
+.bp3-icon-filter:hover,
+.bp3-button.bp3-minimal:hover,
+.bp3-icon.bp3-icon-calendar.filter-icon:hover,
+.bp3-icon.filter-icon.bp3-icon-eye-open:hover,
+.bp3-icon.bp3-icon-sort:hover,
+.bp3-button.bp3-minimal.bp3-icon-pin.bp3-small.pinned,
+.bp3-button.bp3-minimal.bp3-icon-pin.bp3-small.pinned:before {
+	background: transparent !important;
+	/* !important needed */
+	transition: background 0.1s ease, color 0.3s ease;
+	color: var(--icons-hover) !important;
+	/* !important needed */
+	opacity: 1;
+}
+
+.bp3-popover-content .bp3-button {
+	background: var(--sidebar-background) !important;
+	/* !important needed */
+	font-weight: bold;
+}
+
+.bp3-icon > svg {
+  fill: var(--icons);
+}
+
+.bp3-icon > svg:hover {
+  fill: var(--icons-hover);
+}
+
+.bp3-icon,
+.icon{
+  color: var(--icons) !important;
+}
+
+/* Block reference active override - should ideally fix all these importants.... */
+.rm-active.bp3-button.bp3-small.bp3-minimal {
+  color: var(--italics-color) !important;
+  border-color: var(--italics-color) !important;
+}
+
+
+/* Remove shadow border around calendar icon */
+
+.bp3-button:not([class*="bp3-intent-"]),
+.bp3-button:not([class*="bp3-intent-"]):hover {
+	box-shadow: none;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* CODEBLOCK */
+
+
+/* OneDark CodeMirror theme from https://github.com/codemirror/theme-one-dark/blob/main/src/one-dark.ts */
+
+ @media (prefers-color-scheme: dark) {
+     .cm-activeLine, .cm-focused .cm-activeLine, .cm-activeLineGutter, .cm-focused .cm-activeLineGutter, .ͼ2 .cm-activeLine, .ͼ3 .cm-activeLine, .ͼ2 .cm-activeLineGutter, .ͼ3 .cm-activeLineGutter {
+         background-color: #2c313a !important 
+    }
+     .rm-code-block {
+         background-color: #21252b;
+         color: #abb2bf;
+         border-radius: 5px;
+    }
+     .ͼ2 .cm-content, .ͼ3 .cm-content {
+         caret-color: #528bff;
+    }
+     .ͼ2 .cm-selectionBackground, .ͼ3 .cm-selectionBackground, .ͼ2.cm-focused .cm-selectionBackground, .ͼ3.cm-focused .cm-selectionBackground, .cm-content::selection {
+         background-color: #3E4451;
+    }
+     .ͼ1 .cm-cursor, .ͼ3 .cm-cursor {
+         border-left-color: #528bff;
+    }
+     .ͼ2 .cm-specialChar, .ͼ3 .cm-specialChar {
+         color: #56b6c2;
+    }
+     .ͼ1 .cm-placeholder {
+         color: #7d8799;
+    }
+     .ͼ1 .cm-textfield {
+         vertical-align: middle;
+         color: inherit;
+         font-size: 70%;
+         border: 1px solid silver;
+         padding: .2em .5em;
+    }
+     .ͼ1 .cm-foldPlaceholder {
+         background-color: transparent;
+         border-color: #7d8799;
+         color: #7d8799;
+    }
+     .ͼ1 .cm-gutters, .ͼ2 .cm-gutters, .ͼ3 .cm-gutters {
+         background-color: #21252b;
+         color: #abb2bf;
+         border-right: 1px solid #abb2bf 
+    }
+     .ͼ1 .cm-matchingBracket {
+         background-color: #bad0f847;
+         outline: 1px solid #515a6b;
+    }
+     .ͼ1 .cm-nonmatchingBracket {
+         background-color: red;
+    }
+     .ͼa {
+        /* keyword */
+         color: #c678dd;
+    }
+     .ͼb {
+        /* operator */
+         color: #56b6c2;
+    }
+     .ͼc {
+        /* color */
+         color: #d19a66;
+    }
+     .ͼd {
+        /* string */
+         color: #98c379;
+    }
+     .ͼe {
+        /* regexp */
+         color: #56b6c2;
+    }
+     .ͼf {
+        /* variable */
+         color: #61afef;
+    }
+     .ͼg {
+        /* ??? */
+         color: #56b6c2;
+    }
+     .ͼh {
+        /* propertyname */
+         color: #e06c75;
+    }
+     .ͼi {
+        /* typename, classname, etc. */
+         color: #e5c07b;
+    }
+     .ͼj {
+        /* ??? */
+         color: #d19a66;
+    }
+     .ͼk {
+        /* name */
+         color: #e06c75;
+    }
+     .ͼl {
+        /* comment */
+         color: #7d8799;
+    }
+     .ͼm {
+        /* ??? */
+         color: #98c379;
+    }
+     .ͼn {
+        /* ??? */
+         color: #d19a66;
+    }
+}
+
+
+/* ToDo Checkbox Fixes */
+
+.check-container input:checked~.checkmark {
+	background-color: #FFFFFF;
+	background-color: rgb(27, 159, 28);
+}
+
+.check-container:hover input~.checkmark {
+	background-color: var(--icons);
+}
+
+.check-container {
+	position: relative;
+	top: 2px;
+	padding-right: 2px;
+}
+
+.checkmark {
+	transform: scale(1.1);
+	border-width: 1.5px;
+	border-color: var(--references);
+}
+
+
+/* Scrollbar improvements
+HT: Palash Karia */
+
+div::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 20px;
+}
+
+div::-webkit-scrollbar-thumb {
+	background-color: var(--closed-bullets)!important;
+	/* !important needed */
+}
+
+div::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+	border-radius: 8px;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 5px var(--icons-hover) solid;
+}
+
+
+/* Compact borderless references and queries */
+
+.rm-reference-item {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+.rm-ref-page-view {
+	padding-bottom: 10px;
+}
+
+.flex-h-box.rm-title-arrow-wrapper {
+	padding-bottom: 3px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* MERMAID Customization */
+
+.bp3-card.dont-focus-block,
+.rm-mermaid {
+	background: var(--sidebar-background);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* MISCELLANEOUS MENUS, BUTTONS, POP-UPS */
+
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-appear-done.bp3-overlay-enter-done {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+.bp3-button.bp3-intent-danger {
+	color: var(--body-text) !important;
+	/* !important needed */
+	background: #E91E63 !important;
+	/* !important needed */
+}
+
+.bp3-dialog-container.bp3-overlay-content.bp3-overlay-enter-done {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+.confirmation-content-dialog .confirmation-content {
+  background-color: var(--background);
+}  
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* HELP MODAL (new Feb 2021) */
+
+.rm-help-popup__drag-handle.bp3-card.bp3-elevation-2 {
+	background: transparent !important;
+	/* !important needed */
+}
+
+.rm-help-title {
+	color: var(--page-links);
+}
+
+.bp3-icon-search {
+	color: var(--icons);
+}
+
+.rm-help-search__icon-container {
+	border: none;
+	padding-right: 10px;
+}
+
+.rm-help-search__input {
+	border-radius: 10px;
+	border: solid 1px var(--references);
+}
+
+.rm-help-categories,
+.rm-help-function__name,
+.rm-help-markdown-function__markdown {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+.rm-help-markdown-function .rm-strikethrough,
+.rm-help-markdown-function .mord,
+.rm-help-resource__description,
+.rm-help-markdown-function .rm-level1,
+.rm-help-markdown-function .rm-level2,
+.rm-help-markdown-function .rm-level3,
+.rm-help-component__description {
+	color: var(--body-text);
+}
+
+.rm-help-resource__title,
+.rm-help-component__title {
+	color: var(--attributes-color);
+}
+
+.rm-help-category__name {
+	color: var(--bold-color) !important;
+	/* !important needed */
+}
+
+.rm-help-function__shortcut {
+	color: var(--italics-color) !important;
+	/* !important needed */
+}
+
+.rm-help-popup {
+	background-color: var(--sidebar-background);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.rm-help-category-menu-item--selected,
+.rm-help-resource:hover {
+	background-color: var(--background) !important;
+	/* !important needed */
+}
+
+.rm-help-category-menu-item:hover {
+	background-color: unset !important;
+	/* !important needed */
+	color: var(--links-hover);
+}
+
+.rm-help-category-menu-item--selected:hover {
+	color: var(--links-hover) !important;
+	/* !important needed */
+	background-color: var(--background) !important;
+	/* !important needed */
+}
+
+.rm-help-version {
+	color: var(--body-text);
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+/* GRAPH VIEW */
+
+
+/* you can't actually style the graph view because it uses canvas elements, but we *can* apply CSS filters to it to slightly change the appearance */
+
+canvas[data-id="layer2-node"] {
+	/*filter: invert(1) drop-shadow(0px 3px 4px rgba(0,0,0,0.1));*/
+	filter: invert(1) hue-rotate(110deg) saturate(2.5);
+	opacity: 0.3;
+	transition: opacity 0.2s ease-out;
+}
+
+*[id*="cyto-wrapper"]:hover canvas[data-id="layer2-node"] {
+	opacity: 1;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* DB DROPDOWN SELECTOR */
+
+.bp3-menu-item.setting {
+	background-color: transparent !important;
+	/* !important needed */
+}
+
+.bp3-menu-item.setting:hover {
+	background-color: var(--dropdown-menu-highlight) !important;
+	/* !important needed */
+}
+
+.bp3-icon.bp3-icon-cog.icon.settings {
+	color: var(--icons);
+	padding-bottom: 1px;
+}
+
+.flex-h-box.top-row .bp3-menu-item.setting>a {
+	color: var(--body-text);
+}
+
+.flex-h-box.top-row .bp3-menu-item.setting>a:hover,
+.bp3-menu-item.menu-item:hover {
+	background-color: var(--dropdown-menu-highlight);
+	color: var(--body-text);
+}
+
+.menu-title {
+	color: var(--page-links) !important;
+	/* !important needed */
+}
+
+.signout {
+	color: var(--bold-color);
+}
+
+.bp3-menu.rm-graph-dropdown {
+	opacity: 1 !important;
+	/* !important needed */
+	box-shadow: none !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* UPDATE ALERTS AND VARIOUS SPECIAL MENUS */
+
+body>div.bp3-portal>div>div>span>div>span>strong,
+body>div:nth-child(10)>div>div>span>div>span>strong {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+body>div.bp3-portal>div>div>div>button>span>svg>path,
+body>div:nth-child(10)>div>div>div>button>span>svg>path {
+	color: var(--body-text) !important;
+	/* !important needed */
+}
+
+.rm-modal-dialog {
+  background-color: var(--sidebar-background);
+}
+
+.bp3-heading {
+  color: var(--page-links);
+}
+
+.bp3-dialog {
+  background-color: var(--sidebar-background);
+}
+
+.bp3-dialog-header {
+  background-color: var(--background);
+}
+
+/* Share menu */
+
+#db-permissions-modal textarea {
+	background-color: var(--background) !important;
+	/* !important needed */
+	padding: 5px !important;
+	/* !important needed */
+	border: transparent;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+#db-permissions-modal>div>div:nth-child(3)>div>div.flex-v-box>span,
+#db-permissions-modal>div>div:nth-child(4)>div>div>span {
+	display: none;
+}
+
+/* Various input boxes */
+
+.rm-display-name-settings>input,
+.import-table input {
+	background-color: var(--background) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* FIX SELECTION COLOR AND BLOCK-HIGLIGHTS */
+
+.block-highlight-blue,
+::selection {
+	background-color: var(--closed-bullets) !important;
+	/* !important needed */
+}
+
+/* {{or}} dropdown */
+
+.rm-option {
+	background-color: var(--sidebar-background);
+	color: var(--italics-color);
+	font-style: italic;
+	border: 1px dashed var(--references);
+	border-radius: 4px;
+	padding-right: 15px;
+	margin: 0 2px 0 2px;
+}
+
+.rm-option::after {
+	border-top-color: var(--body-text);
+}
+
+.rm-option:hover {
+	cursor: default;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* ATTRIBUTE TABLE */
+
+span[style*="background-color: rgb(14, 90, 138);"] {
+	background-color: unset !important;
+	/* !important needed */
+	border-radius: 5px;
+}
+
+/* TABLE BORDER */
+
+td {
+  border-color: var(--references) !important;
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Block quote styling */
+
+.rm-bq {
+	background-color: var(--sidebar-background);
+	color: var(--italics-color);
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: var(--references);
+	font-family: var(--header-font);
+	width: 100%;
+	margin: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.rm-bq::before {
+	content: "❝\A";
+	white-space: pre;
+	font-size: 100%;
+	color: var(--references);
+}
+
+.rm-bq::after {
+	content: "\A❞";
+	white-space: pre;
+	color: var(--references);
+	font-size: 100%;
+}
+
+.rm-alias-tooltip__content .rm-bq {
+        color: var(--bold-color);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Smaller bullet tooltips */
+
+.rm-bullet__tooltip {
+	font-size: 10px;
+	color: var(--body-text);
+}
+
+.bp3-popover-content {
+	padding: 5px !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Better Quick Capture Sync Modal */
+
+.rm-quick-capture-sync-modal {
+	border-radius: 5px;
+	background-color: var(--sidebar-background);
+}
+
+.bp3-button.bp3-intent-primary.bp3-large {
+	color: var(--body-text);
+	background-color: #D9822B !important;
+	/* !important needed */
+	border: none;
+	box-shadow: none;
+}
+
+.bp3-button.bp3-intent-primary.bp3-large:hover {
+	color: var(--links-hover) !important;
+	/* !important needed */
+}
+
+#quick-capture-history {
+	color: var(--bold-color);
+	font-size: 16px;
+	width: 90% !important;
+	/* !important needed */
+	padding: 20px;
+	border-radius: 5px;
+	background-color: var(--background);
+}
+
+#quick-capture-history .level3 {
+	color: var(--page-links);
+	font-family: var(--header-font);
+	font-size: 20px;
+}
+
+#quick-capture-history>div>li {
+	color: var(--body-text);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* HR line styling */
+
+.rm-hr {
+	border-color: var(--references);
+	margin: 8px 0px 0px 0px;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* In-line comments */
+
+.rm-paren {
+	color: var(--body-text);
+	background-color: var(--kanban-column-background);
+	border: none;
+	border-radius: 8px;
+	padding: 2px 5px 4px;
+	transition: color 0.3s ease;
+}
+
+.rm-spacer {
+	font-size: 1.1em;
+	position: relative;
+	top: 2px;
+	color: var(--references);
+}
+
+.rm-spacer:hover {
+	color: var(--links-hover);
+}
+
+.rm-paren__paren {
+	color: var(--references);
+}
+
+.rm-paren__paren--left {
+	padding-right: 3px;
+}
+
+.rm-paren__paren--right {
+	padding-left: 3px;
+}
+
+.rm-paren__paren:hover {
+	color: var(--links-hover);
+	background-color: transparent;
+}
+
+.rm-paren:hover {
+	cursor: crosshair;
+	background-color: var(--kanban-column-background);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Resize styling */
+
+#right-sidebar .rm-resize-handle {
+  left: -4px !important;
+}
+
+.rm-resize-handle:hover {
+	border-left: dotted var(--icons-hover);
+}
+
+div::-webkit-resizer {
+	border-style: solid;
+	border-color: transparent var(--references) var(--references) transparent;
+	background-color: transparent;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Cloze styling */
+
+.rm-block__part--equals {
+	background-color: #A5494F;
+	border: none;
+	border-radius: 5px;
+	padding: 3px 3px 3px 4px;
+	cursor: help;
+}
+
+.rm-block__part--equals:hover {
+	background-color: #48864D;
+}
+
+.bp3-card {
+	background-color: var(--sidebar-background);
+	border: none;
+	color: var(--body-text);
+	padding: 3px 5px 3px 5px;
+	box-shadow: none;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	width: unset;
+	max-width: 30vw;
+	text-align: justify;
+	text-justify: inter-word;
+	max-height: 60vh;
+	overflow-y: auto;
+}
+
+
+/* Cloze block embeds */
+
+.bp3-card .rm-embed-container {
+	margin-left: -2px !important;
+	/* !important needed */
+}
+
+.bp3-card .rm-hide-bullet {
+	background-color: transparent;
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Mobile scrollable right sidebar in portrait mode */
+
+@media only screen
+and (max-device-width : 926px)
+and (orientation: portrait) {
+	.roam-body {
+		overflow-x: scroll !important;
+		/* !important needed */
+		display: flex;
+		background-color: var(--sidebar-background);
+		max-width: 100%;
+	}
+	.roam-main {
+		min-width: 95vw;
+	}
+	#right-sidebar[style*="flex: 0 0 40%;"] {
+		flex: 0 0 95% !important;
+		/* !important needed */
+	}
+}
+
+
+/* Mobile compact view */
+
+@media only screen
+and (max-device-width : 926px) {
+  .roam-article {
+    padding: 0px 0px 0px 12px !important;
+    /* !important needed */
+  }
+  
+  
+  .rm-find-or-create-wrapper:focus-within {
+	flex: 1 1 auto !important;
+	/* !important needed */
+}
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Encrypted block */
+
+.rm-encrypted-block {
+	color: var(--italics-color);
+}
+
+.rm-encrypted-passphrase>form {
+	color: var(--body-text);
+}
+
+.rm-encrypted-passphrase>form>input {
+	background-color: var(--sidebar-background);
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Grey prompts e.g., click here to start a daily note */
+
+span[style*="color: rgb(206, 217, 224);"],
+.rm-right-sidebar__helper-text {
+	color: var(--bold-color) !important;
+	/* !important needed */
+	font-style: italic !important;
+	/* !important needed */
+}
+
+.simple-bullet-inner {
+	background-color: var(--bullets) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* On hover level 0 multibar */
+
+.rm-level-0>.rm-multibar:hover {
+	border-right-color: var(--icons-hover) !important;
+	/* !important needed */
+}
+
+
+/*---------------------------------------------------------------------------*/
+
+
+/* New Command Palette and Settings */
+
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active,
+.rm-command-palette__scroll-container .bp3-menu .rm-menu-item--active:hover,
+.rm-settings input.rm-display-name-settings__input,
+.rm-settings input.rm-display-name-settings__input:focus,
+.rm-settings .bp3-tabs .bp3-tab-list,
+.rm-settings .select-wrapper{
+  background-color: var(--background);
+}
+
+.rm-settings .bp3-tabs .bp3-tab[aria-selected="true"], 
+.rm-settings .bp3-tabs .bp3-tab:hover,
+.rm-settings .bp3-tabs .bp3-tab-panel {
+  background-color: var(--sidebar-background) !important;
+	/* !important needed */
+}
+
+.bp3-tab,
+ {
+  color: var(--body-text);
+}
+.rm-settings .rm-settings-panel .rm-settings-panel__description {
+  color: var(--italics-color);
+}
+
+.rm-settings__tab,
+.rm-settings-heading {
+  color: var(--body-text) !important; /* important needed */
+}
+
+.rm-settings .rm-settings-panel .rm-select-wrapper {
+  background-color: var(--background);
+}
+
+.rm-settings input[type="text"],
+.rm-settings input[type="text"]:focus {
+  background-color: var(--background);
+}
+
+.rm-command-palette__shortcut {
+  background-color: var(--background);
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+/* Excalidraw adjustments */
+
+.ex-header-wrapper-light {
+  background-color: var(--sidebar-background);
+}
+
+.ex-header-title-light {
+  background-color: var(--background);
+}
+
+/*-----Block reference footnote----*/
+
+sup {
+  left: .3em;
+  color: var(--bold-color);
+  padding-right: 4px;
+}
+
+.rm-reference-footnote .rm-active {
+    color: var(--italics-color);
+    background-color: var(--sidebar-background);
+}
+
+/*---------------------------------------------------------------------------*/
+
+
+/* ROAMJS Configuration pages */
+
+h4,
+.bp3-tab,
+.bp3-control,
+.bp3-label,
+.bp3-tab-panel {
+    color: var(--body-text);
+}
+
+.bp3-card {
+  max-width: 100%;
+}
+
+.bp3-tab[aria-selected="true"] {
+  background-color: var(--background) !important;
+  color: var(--page-links);
+}
+
+.bp3-tab:not([aria-disabled="true"]):hover {
+  color: var(--links-hover);
+}
+
+/*---------------------------------------------------------------------------*/
+
+/* VIDEO COMMENT BOX FIX */
+
+.rm-video-player__comment-button {
+     opacity:0;
+     left: 93%;
+     top: 80%;
+}
+ .rm-video-player__comment-button::after{
+     content: " 💬 ";
+     font-size: 14 !important;
+     color: transparent !important;
+     text-shadow: 0 0 0 black;
+     padding:5px;
+     border-radius:10px;
+     background-color:white;
+     opacity:.5;
+     top: 95%;
+     cursor: cell;
+}
+ .rm-video-player__container:hover .rm-video-player__comment-button {
+     opacity:.5;
+}
+
+/*---------------------------------------------------------------------------*/
+Shift-Shift
+Opt-Opt
+1 tweets
+⬑ load parent
+
+@caffo
+October 17, 2020
+@calhistorian @RoamResearch can you point me to more info about full width support for the main window? I may be able to implement it.
+
+@calhistorian
+October 17, 2020
+@caffo @RoamResearch Here is Abhay’s theme, built on the Dark Age Theme (my css is horrid, so I don’t know if giving you mine would even be fruitful): abhayprasanna.github.io/better-dark-ag…
+
+@calhistorian
+October 17, 2020
+@caffo @RoamResearch This is a great demonstration of a responsive layout.
+Load replies
+1 backlinks
+
+GitHub - abhayprasanna/abhayprasanna.github.io
+https://github.com/abhayprasanna/abhayprasanna.github.io
+13
+5 pages on this domain
+Couldn't load the icon
+rainbow-indent.css
+https://abhayprasanna.github.io/rainbow-indent.css
+6
+Couldn't load the icon
+rainbow-indent-bullets.css
+https://abhayprasanna.github.io/rainbow-indent-bullets.css
+3
+Couldn't load the icon
+opensidebars.js
+https://abhayprasanna.github.io/opensidebars.js
+2
+Couldn't load the icon
+dark-age-dracula.css
+http://abhayprasanna.github.io/dark-age-dracula.css
+1
+Load more pages
+Ideas for ampie
+Put any ideas/bug reports/questions here, I'll get an email and respond to you ASAP. Or just say hi =) If you want me to know this page's URL, make sure to add it as well. And add your email as you are not logged in!
+Type here
+Send!
+
+
+
